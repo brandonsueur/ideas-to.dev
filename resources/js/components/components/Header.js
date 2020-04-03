@@ -5,7 +5,7 @@ const Header = () => (
   <header className="flex justify-between items-center my-12">
     <h1 className="font-bold top-auto">
       <Link className="navbar-brand" to="/">
-        okkou.dev
+        ideas-to.dev
       </Link>
     </h1>
 

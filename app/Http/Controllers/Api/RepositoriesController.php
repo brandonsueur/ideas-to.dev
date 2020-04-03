@@ -48,7 +48,6 @@ class RepositoriesController extends BaseController
 
         ];
 
-
         Like::create($data);
 
         return response()->json(['data' =>  $data],201);

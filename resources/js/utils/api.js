@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://okkou.test/api/v1/",
-  responseType: "json"
+  baseURL: "http://ideas-to.dev.test/api/v1/",
+  responseType: "json",
 });

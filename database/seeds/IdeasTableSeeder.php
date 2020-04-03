@@ -20,8 +20,7 @@ class IdeasTableSeeder extends Seeder
                 'title' => 'Une association caritative',
                 'slug' => 'une-association-caritative',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
@@ -32,8 +31,7 @@ class IdeasTableSeeder extends Seeder
                 'title' => 'Comparaisons et statistiques du gasoil',
                 'slug' => 'comparaisons-et-statistiques-du-gasoil',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
@@ -44,8 +42,7 @@ class IdeasTableSeeder extends Seeder
                 'title' => 'Formulaire de contact',
                 'slug' => 'formulaire-de-contact',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 0,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
@@ -56,32 +53,29 @@ class IdeasTableSeeder extends Seeder
                 'title' => 'Mario Bros',
                 'slug' => 'mario-bros',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
 
             $table->insert([
-                'user_id' => 1,
+                'user_id' => 0,
                 'category_id' => 1,
                 'title' => 'ChuiBourré',
                 'slug' => 'chuibourre',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
 
             $table->insert([
-                'user_id' => 1,
+                'user_id' => 2,
                 'category_id' => 1,
                 'title' => 'Une poupée',
                 'slug' => 'une-poupee',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
@@ -92,8 +86,7 @@ class IdeasTableSeeder extends Seeder
                 'title' => 'Votre poids en photo',
                 'slug' => 'votre-poids-en-photo',
                 'content' => '...',
-                'draft' => false,
-                'display' => true,
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);

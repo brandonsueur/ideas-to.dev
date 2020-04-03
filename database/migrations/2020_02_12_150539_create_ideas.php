@@ -23,8 +23,10 @@ class CreateIdeas extends Migration
 
             $table->longText('content');
 
-            $table->boolean('draft');
-            $table->boolean('display');
+            // 0 : draft
+            // 1 : display
+            // 2 : canceled
+            $table->integer('status')->default(0);
 
             $table->string('address_ip')->nullable();
 

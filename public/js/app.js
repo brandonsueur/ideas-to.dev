@@ -62664,7 +62664,7 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "navbar-brand",
     to: "/"
-  }, "okkou.dev")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, "ideas-to.dev")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset | text-sm font-medium | flex"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/ideas",
@@ -63516,7 +63516,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: "http://okkou.test/api/v1/",
+  baseURL: "http://ideas-to.dev.test/api/v1/",
   responseType: "json"
 }));
 
@@ -63608,8 +63608,8 @@ var emojiCategory = function emojiCategory(category) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/brandonsueur/Sites/okkou/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/brandonsueur/Sites/okkou/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/brandonsueur/Sites/ideas-to.dev/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/brandonsueur/Sites/ideas-to.dev/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

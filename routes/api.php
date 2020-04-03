@@ -7,6 +7,8 @@ Route::group(['prefix' => 'ideas'], function () {
         ->name('api.ideas.show');
     Route::get('category/{id}', ['uses' => 'Api\IdeasController@category'])
         ->name('api.ideas.category');
+    Route::post('/', ['uses' => 'Api\IdeasController@store'])
+        ->name('api.ideas.store');
 });
 
 Route::group(['prefix' => 'categories'], function () {

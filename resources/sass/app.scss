@@ -1,0 +1,40 @@
+@import 'tailwind';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: #080939;
+}
+
+.bg-primary{ background: #FFF5F7 }
+
+.bg-red{ background: #FFF5F7 }
+.bg-green{ background: #FAFFF5 }
+.bg-blue{ background: #F5FFFE }
+.bg-bluedark{ background: #080939 }
+.bg-pink{ background: #F5FFFE }
+.bg-purple{ background: #F5FFFE }
+.bg-cta{ background: #ff4742 }
+
+.text-bluedark{ color: #080939 }
+
+h1, h2, h3, h4,h5, h6{ color: #0B1255 }
+
+a.button{ background: #080939 }
+a.like:active{ transform: rotate(7deg) }
+
+
+.content{
+    h2{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 40px 0 20px;
+    }
+
+    ul{ list-style: inside }
+}

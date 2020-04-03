@@ -16,22 +16,15 @@ class IdeasController extends BaseController
 {
     public function index()
     {
-        $ideas = Idea::withCount('likes')
-            ->with('category')
-            ->where('display', true)
-            ->where('draft', false)
-            ->get();
+        $ideas = Idea::published()->with('category')->get();
 
         return IdeaResource::collection($ideas);
     }
 
     public function category($id)
     {
-        $ideas = Idea::query()
-            ->withCount('likes')
-            ->where('category_id', $id)
-            ->where('display', true)
-            ->where('draft', false)
+        $ideas = Idea::published()
+            ->where('id', '=')
             ->get();
 
         return IdeaResource::collection($ideas);
@@ -39,10 +32,9 @@ class IdeasController extends BaseController
 
     public function show($id)
     {
-        $idea = Idea::withCount('likes')
+        $idea = Idea::published()
+            ->withCount('likes')
             ->with('category')
-            ->where('display', true)
-            ->where('draft', false)
             ->where('id', '=', $id)
             ->first();
 

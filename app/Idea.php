@@ -20,6 +20,10 @@ class Idea extends Model
         return $this->hasMany(Like::class);
     }
 
+    public function scopePublished($query){
+        return $query->where('status', 1);
+    }
+
     public function repositories()
     {
 

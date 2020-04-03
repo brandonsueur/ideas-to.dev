@@ -1,6 +1,31 @@
 import React, { Component } from "react";
 
 export class PageAdd extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      values: {
+        title: "",
+        content: "",
+        category_id: null,
+      },
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    console.log(event);
+
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    console.log(event);
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div>
@@ -12,34 +37,47 @@ export class PageAdd extends Component {
           libero corrupti odit iusto.
         </p>
 
-        <form action="#">
+        <form action="#" onSubmit={this.handleSubmit}>
           <div className="block">
-            <label htmlFor="title">Titre de l'idée</label>
-            {/* IDEA changé d'idée à chaque refresh dans le placeholder */}
-          </div>
-          <div className="block">
-            <label htmlFor="title">Titre de l'idée</label>
-
-            <div className="inline-block w-auto px-4 py-2 bg-gray-200 rounded-lg">
-              <span>🎨</span>
-              <span className="ml-2">front-end</span>
-            </div>
-
             <label htmlFor="title">Titre de l'idée</label>
             {/* IDEA changé d'idée à chaque refresh dans le placeholder */}
             <input
               type="text"
               id="title"
               name="title"
-              className="w-full px-4 py-2 font-medium bg-gray-200 rounded-lg outline-none"
+              className="w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none"
               placeholder="🏠 Contruire une maison 3D en CSS"
+              value={this.state.values.title}
+              onChange={this.handleChange}
               required
             />
-          </div>
 
-          {/* title */}
-          {/* content */}
-          {/* category */}
+            <label htmlFor="categories">Contenu de l'idée</label>
+            <select
+              name="category_id"
+              id="categories"
+              className="w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none"
+              value={this.state.values.category_id}
+              onChange={this.handleChange}
+            >
+              <option value="1">Mobile</option>
+              <option value="2">Back-end</option>
+              <option value="3">Package</option>
+              <option value="4">Front-End</option>
+            </select>
+
+            <label htmlFor="content">Contenu de l'idée</label>
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+              class="w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
+              value={this.state.values.content}
+              onChange={this.handleChange}
+            ></textarea>
+          </div>
+          <button>Submit</button>
         </form>
       </div>
     );

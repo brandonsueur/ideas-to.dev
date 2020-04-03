@@ -62809,7 +62809,7 @@ function (_Component) {
       e.preventDefault();
       var id = this.props.idea.id;
       _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].post("/likes", {
-        'idea_id': id
+        idea_id: id
       }).then(function (response) {
         if (response.status === 401) {
           return _this2.setState({
@@ -62840,7 +62840,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         "data-id": idea.id,
         "data-category": idea.category.name,
-        className: "flex container h-32 rounded-lg my-8 ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(idea.category.name), " ").concat(!visible && 'hidden')
+        className: "flex container h-32 rounded-lg my-8 ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(idea.category.name), " ").concat(!visible && "hidden")
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "w-5/6 flex"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -62858,7 +62858,7 @@ function (_Component) {
         className: "leading-none"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
         className: "count-like"
-      }, !this.state.isLoading ? countLikes : idea.likes_count), " personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, !this.state.isLoading ? countLikes : idea.likes_count), " ", "personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "w-1/6 flex"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "justify-center text-center flex self-center w-full"
@@ -62887,6 +62887,7 @@ function (_Component2) {
     _classCallCheck(this, Items);
 
     _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Items).call(this, props));
+    console.log("zefkozeozefkoz");
     _this4.state = {
       loading: true,
       ideas: null,
@@ -62900,6 +62901,7 @@ function (_Component2) {
   _createClass(Items, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      console.log("component did mount");
       this.getCategories();
       this.getIdeas();
     }
@@ -62916,7 +62918,7 @@ function (_Component2) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get('/categories');
+                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get("/categories");
 
               case 2:
                 res = _context2.sent;
@@ -62957,7 +62959,7 @@ function (_Component2) {
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get('/ideas');
+                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get("/ideas");
 
               case 2:
                 res = _context3.sent;
@@ -63007,21 +63009,25 @@ function (_Component2) {
           countIdeas = _this$state.countIdeas,
           categories = _this$state.categories,
           categorySelected = _this$state.categorySelected;
+      console.log({
+        ideas: ideas,
+        categories: categories
+      });
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "text-2xl font-bold"
-      }, "Liste des id\xE9es non exhaustifs"), !loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " id\xE9es trouv\xE9es") : '', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+      }, "Liste des id\xE9es non exhaustifs"), !loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " id\xE9es trouv\xE9es") : "", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         className: "flex list-reset | mt-16 mb-16"
       }, categories && categories.length > 0 && categories.map(function (category) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
           key: category.id,
-          className: category.ideas_count > 0 ? 'd-block' : 'hidden'
+          className: category.ideas_count > 0 ? "d-block" : "hidden"
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
           onClick: function onClick(e) {
             return _this5.filter(category);
           },
-          className: "m-1 py-3 px-3 cursor-pointer rounded-lg d-block ".concat(category.name === categorySelected ? 'bg-bluedark text-white' : Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(category.name), " font-medium text-base")
+          className: "m-1 py-3 px-3 cursor-pointer rounded-lg d-block ".concat(category.name === categorySelected ? "bg-bluedark text-white" : Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(category.name), " font-medium text-base")
         }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["emojiCategory"])(category.name), " #", category.name, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-          className: "ml-3 text-xs bg-white p-1 ".concat(category.name === categorySelected ? 'bg-purple-100 text-bluedark' : 'bg-white', " px-3 rounded-full")
+          className: "ml-3 text-xs bg-white p-1 ".concat(category.name === categorySelected ? "bg-purple-100 text-bluedark" : "bg-white", " px-3 rounded-full")
         }, category.ideas_count)));
       })), !loading ? ideas && ideas.length > 0 && ideas.map(function (idea) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Item, {
@@ -63075,9 +63081,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -63089,13 +63095,39 @@ var PageAdd =
 function (_Component) {
   _inherits(PageAdd, _Component);
 
-  function PageAdd() {
+  function PageAdd(props) {
+    var _this;
+
     _classCallCheck(this, PageAdd);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(PageAdd).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(PageAdd).call(this, props));
+    _this.state = {
+      values: {
+        title: "",
+        content: "",
+        category_id: null
+      }
+    };
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(PageAdd, [{
+    key: "handleChange",
+    value: function handleChange(event) {
+      console.log(event);
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      console.log(event);
+      event.preventDefault();
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -63103,29 +63135,48 @@ function (_Component) {
       }, "Ajoute ton id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "w-2/3"
       }, "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae in velit, asperiores assumenda distinctio dolore aut architecto similique quae eos dolorem ducimus, enim facilis quidem libero corrupti odit iusto."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        action: "#"
+        action: "#",
+        onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "block"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "title"
-      }, "Titre de l'id\xE9e")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "block"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "title"
-      }, "Titre de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "inline-block w-auto px-4 py-2 bg-gray-200 rounded-lg"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\uD83C\uDFA8"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "ml-2"
-      }, "front-end")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "title"
       }, "Titre de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         id: "title",
         name: "title",
-        className: "w-full px-4 py-2 font-medium bg-gray-200 rounded-lg outline-none",
+        className: "w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none",
         placeholder: "\uD83C\uDFE0 Contruire une maison 3D en CSS",
+        value: this.state.values.title,
+        onChange: this.handleChange,
         required: true
-      }))));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "categories"
+      }, "Contenu de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        name: "category_id",
+        id: "categories",
+        className: "w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none",
+        value: this.state.values.category_id,
+        onChange: this.handleChange
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "1"
+      }, "Mobile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "2"
+      }, "Back-end"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "3"
+      }, "Package"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "4"
+      }, "Front-End")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "content"
+      }, "Contenu de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        name: "content",
+        id: "content",
+        cols: "30",
+        rows: "10",
+        "class": "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none",
+        value: this.state.values.content,
+        onChange: this.handleChange
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit")));
     }
   }]);
 

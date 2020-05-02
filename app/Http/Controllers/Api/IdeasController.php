@@ -59,7 +59,7 @@ class IdeasController extends BaseController
             'category_id' => 'exists:categories,id',
         ]);
 
-        if($validator->fails()){
+        if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
 
@@ -73,6 +73,6 @@ class IdeasController extends BaseController
 
         Idea::create($data);
 
-        return response()->json(['data' =>  $data],201);
+        return response()->json(['data' =>  $data], 201);
     }
 }

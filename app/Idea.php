@@ -11,7 +11,8 @@ class Idea extends Model
 {
     protected $guarded = ['id'];
 
-    public function category(): BelongsTo{
+    public function category(): BelongsTo
+    {
         return $this->belongsTo(Category::class);
     }
 
@@ -20,12 +21,12 @@ class Idea extends Model
         return $this->hasMany(Like::class);
     }
 
-    public function scopePublished($query){
+    public function scopePublished($query)
+    {
         return $query->where('status', 1);
     }
 
     public function repositories()
     {
-
     }
 }

@@ -28,11 +28,13 @@ Route::group(['prefix' => 'repositories'], function () {
 });
 
 Route::group(['prefix' => 'likes'], function () {
+    Route::get('/', ['uses' => 'Api\LikesController@index'])
+        ->name('api.likes.index');
     Route::post('/', ['uses' => 'Api\LikesController@store'])
         ->name('api.likes.store');
 });
 
-Route::middleware(['auth']
+Route::middleware(
+    ['auth']
 )->group(function () {
-
 });

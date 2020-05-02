@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import axios from "../../utils/api";
 
 import { colorCategory, emojiCategory } from "../../utils/index";
+import confetti from "canvas-confetti";
 
 class Item extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class Item extends Component {
       data: null,
       countLikes: null,
       isLoading: false,
-      alreadyVoted: null,
+      alreadyVoted: null
     };
 
     this.click = this.click.bind(this);
@@ -33,7 +34,7 @@ class Item extends Component {
 
     this.setState({
       idea: data,
-      loading: false,
+      loading: false
     });
   }
 
@@ -44,22 +45,28 @@ class Item extends Component {
 
     axios
       .post("/likes", { idea_id: id })
-      .then((response) => {
+      .then(response => {
         if (response.status === 401) {
           return this.setState({
             countLikes: response.data.countLikes,
-            alreadyVoted: true,
+            alreadyVoted: true
           });
         } else {
+          confetti({
+            particleCount: 60,
+            spread: 100,
+            origin: { y: 1.2 }
+          });
+
           this.setState({
             countLikes: response.data.countLikes,
             data: response.data,
             isLoading: false,
-            alreadyVoted: false,
+            alreadyVoted: false
           });
         }
       })
-      .catch((error) => console.log(error.response));
+      .catch(error => console.log(error.response));
   }
 
   render() {
@@ -100,7 +107,7 @@ class Item extends Component {
         <div className="w-1/6 flex">
           <div className="justify-center text-center flex self-center w-full">
             <a
-              onClick={(e) => this.click(e)}
+              onClick={e => this.click(e)}
               disabled={this.state.isLoading}
               className="px-5 py-4 bg-white rounded-lg text-2xl shadow-lg hover:shadow-xl like"
               href="#"
@@ -124,7 +131,7 @@ class Items extends Component {
       ideas: null,
       countIdeas: null,
       categories: null,
-      categorySelected: null,
+      categorySelected: null
     };
   }
 
@@ -147,7 +154,7 @@ class Items extends Component {
 
     this.setState({
       ideas: data,
-      loading: false,
+      loading: false
     });
   }
 
@@ -156,7 +163,7 @@ class Items extends Component {
 
     this.setState({
       categorySelected: name,
-      countIdeas: ideas_count,
+      countIdeas: ideas_count
     });
   }
 
@@ -166,7 +173,7 @@ class Items extends Component {
       ideas,
       countIdeas,
       categories,
-      categorySelected,
+      categorySelected
     } = this.state;
 
     console.log({ ideas, categories });
@@ -182,14 +189,14 @@ class Items extends Component {
         <ul className="flex list-reset | mt-16 mb-16">
           {categories &&
             categories.length > 0 &&
-            categories.map((category) => {
+            categories.map(category => {
               return (
                 <li
                   key={category.id}
                   className={category.ideas_count > 0 ? "d-block" : "hidden"}
                 >
                   <a
-                    onClick={(e) => this.filter(category)}
+                    onClick={e => this.filter(category)}
                     className={`m-1 py-3 px-3 cursor-pointer rounded-lg d-block ${
                       category.name === categorySelected
                         ? "bg-bluedark text-white"
@@ -215,7 +222,7 @@ class Items extends Component {
         {!loading ? (
           ideas &&
           ideas.length > 0 &&
-          ideas.map((idea) => {
+          ideas.map(idea => {
             return (
               <Item
                 idea={idea}

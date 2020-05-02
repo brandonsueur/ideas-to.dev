@@ -1,42 +1,41 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 import axios from "../../utils/api";
 import Content from "../components/Content";
 
 export class PageIdea extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
       loading: true,
       idea: null,
-      repositories: null,
-    }
+      repositories: null
+    };
   }
 
   componentDidMount() {
     this.getIdea();
   }
 
-  async getIdea(){
+  async getIdea() {
     let res = await axios.get(`ideas/${this.props.params.id}`);
     let { data } = await res.data;
 
     this.setState({
       idea: data,
       loading: false
-    })
-  };
+    });
+  }
 
-  render(){
+  render() {
     const { loading, idea } = this.state;
 
     // @todo is loading
-    if(loading) return null
-    return(
+    if (loading) return null;
+    return (
       <div>
-       <Content idea={idea} />
+        <Content idea={idea} />
 
         {/* cta */}
         {/* <div className="bg-bluedark rounded-lg py-6 px-4 mb-10">
@@ -54,6 +53,6 @@ export class PageIdea extends Component {
         {/* repositories */}
         {/*<Repositories />*/}
       </div>
-    )
+    );
   }
 }

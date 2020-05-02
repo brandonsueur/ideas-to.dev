@@ -63340,8 +63340,7 @@ function (_Component) {
     _this.state = {
       data: null,
       countLikes: null,
-      isLoading: false,
-      alreadyVoted: null
+      isLoading: false
     };
     _this.click = _this.click.bind(_assertThisInitialized(_this));
     return _this;
@@ -63412,8 +63411,7 @@ function (_Component) {
       }).then(function (response) {
         if (response.status === 401) {
           return _this2.setState({
-            countLikes: response.data.countLikes,
-            alreadyVoted: true
+            countLikes: response.data.countLikes
           });
         } else {
           Object(canvas_confetti__WEBPACK_IMPORTED_MODULE_5__["default"])({
@@ -63427,8 +63425,7 @@ function (_Component) {
           _this2.setState({
             countLikes: response.data.countLikes,
             data: response.data,
-            isLoading: false,
-            alreadyVoted: false
+            isLoading: false
           });
         }
       })["catch"](function (error) {
@@ -63494,7 +63491,6 @@ function (_Component2) {
     _classCallCheck(this, Items);
 
     _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Items).call(this, props));
-    console.log("zefkozeozefkoz");
     _this4.state = {
       loading: true,
       ideas: null,
@@ -63508,7 +63504,6 @@ function (_Component2) {
   _createClass(Items, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("component did mount");
       this.getCategories();
       this.getIdeas();
     }
@@ -63616,10 +63611,6 @@ function (_Component2) {
           countIdeas = _this$state.countIdeas,
           categories = _this$state.categories,
           categorySelected = _this$state.categorySelected;
-      console.log({
-        ideas: ideas,
-        categories: categories
-      });
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "text-2xl font-bold"
       }, "Liste des id\xE9es non exhaustifs"), !loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " id\xE9es trouv\xE9es") : "", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {

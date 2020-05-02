@@ -13,8 +13,7 @@ class Item extends Component {
     this.state = {
       data: null,
       countLikes: null,
-      isLoading: false,
-      alreadyVoted: null
+      isLoading: false
     };
 
     this.click = this.click.bind(this);
@@ -48,8 +47,7 @@ class Item extends Component {
       .then(response => {
         if (response.status === 401) {
           return this.setState({
-            countLikes: response.data.countLikes,
-            alreadyVoted: true
+            countLikes: response.data.countLikes
           });
         } else {
           confetti({
@@ -61,8 +59,7 @@ class Item extends Component {
           this.setState({
             countLikes: response.data.countLikes,
             data: response.data,
-            isLoading: false,
-            alreadyVoted: false
+            isLoading: false
           });
         }
       })
@@ -125,7 +122,6 @@ class Items extends Component {
   constructor(props) {
     super(props);
 
-    console.log("zefkozeozefkoz");
     this.state = {
       loading: true,
       ideas: null,
@@ -136,7 +132,6 @@ class Items extends Component {
   }
 
   componentDidMount() {
-    console.log("component did mount");
     this.getCategories();
     this.getIdeas();
   }
@@ -176,7 +171,6 @@ class Items extends Component {
       categorySelected
     } = this.state;
 
-    console.log({ ideas, categories });
     return (
       <div>
         <h2 className="text-2xl font-bold">Liste des idées non exhaustifs</h2>

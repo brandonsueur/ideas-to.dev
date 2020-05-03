@@ -63200,7 +63200,7 @@ function (_React$Component) {
         className: "mr-5 text-3xl"
       }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["emojiCategory"])(idea.category.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "text-2xl font-semibold"
-      }, idea.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, idea.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mt-12 mb-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_1___default.a, {
         className: "content",

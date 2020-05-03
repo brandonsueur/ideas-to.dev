@@ -32,9 +32,9 @@ class Content extends React.Component {
 
           <h1 className="text-2xl font-semibold">{idea.title}</h1>
 
-          <p className="mt-12 mb-12">
+          <div className="mt-12 mb-12">
             <ReactMarkdown className="content" source={idea.content} />
-          </p>
+          </div>
 
           <time className="font-light">
             🕑 mardi 29 décembre 2020 ・ 🧔🏻 Par <b>Brandon Sueur</b>

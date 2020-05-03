@@ -56,7 +56,10 @@ class IdeasController extends BaseController
                 'required',
                 'min:10',
             ],
-            'category_id' => 'exists:categories,id',
+            'category_id' => [
+                'required',
+                'exists:categories,id'
+            ],
         ]);
 
         if ($validator->fails()) {

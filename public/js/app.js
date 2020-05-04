@@ -63185,7 +63185,6 @@ function (_React$Component) {
       var _this = this;
 
       var idea = this.props.idea;
-      console.log(idea);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "data-id": idea.id
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -63704,35 +63703,26 @@ function (_Component) {
         title: "",
         content: "",
         category_id: null
+      },
+      errors: {
+        title: '',
+        content: '',
+        category: ''
       }
     };
-    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(PageAdd, [{
-    key: "handleChange",
-    value: function handleChange(event) {
-      console.log(event);
-      this.setState({
-        value: event.target.value
-      });
-    }
-  }, {
     key: "handleSubmit",
     value: function handleSubmit(event) {
-      console.log(event);
       event.preventDefault();
     }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "mb-5 text-2xl font-semibold"
-      }, "Ajoute ton id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "w-2/3"
-      }, "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae in velit, asperiores assumenda distinctio dolore aut architecto similique quae eos dolorem ducimus, enim facilis quidem libero corrupti odit iusto."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         action: "#",
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -63744,18 +63734,13 @@ function (_Component) {
         id: "title",
         name: "title",
         className: "w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none",
-        placeholder: "\uD83C\uDFE0 Contruire une maison 3D en CSS",
-        value: this.state.values.title,
-        onChange: this.handleChange,
         required: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "categories"
       }, "Contenu de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         name: "category_id",
         id: "categories",
-        className: "w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none",
-        value: this.state.values.category_id,
-        onChange: this.handleChange
+        className: "w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "1"
       }, "Mobile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -63771,9 +63756,7 @@ function (_Component) {
         id: "content",
         cols: "30",
         rows: "10",
-        "class": "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none",
-        value: this.state.values.content,
-        onChange: this.handleChange
+        className: "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit")));
     }
   }]);

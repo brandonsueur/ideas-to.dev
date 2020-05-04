@@ -8,7 +8,6 @@ class Content extends React.Component {
   render() {
     let { idea } = this.props;
 
-    console.log(idea);
     return (
       <div data-id={idea.id}>
         {/* header */}

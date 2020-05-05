@@ -65566,6 +65566,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/react-hook-form.es.js");
+/* harmony import */ var _utils_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/api */ "./resources/js/utils/api.js");
+
 
 
 var PageAdd = function PageAdd() {
@@ -65575,7 +65577,24 @@ var PageAdd = function PageAdd() {
       errors = _useForm.errors;
 
   var onSubmit = function onSubmit(values) {
-    return console.log(values);
+    var title = values.title,
+        content = values.content,
+        category_id = values.category_id;
+    var data = {
+      title: title,
+      content: content,
+      category_id: Number(category_id)
+    };
+    _utils_api__WEBPACK_IMPORTED_MODULE_2__["default"].post("ideas", data).then(function (response) {
+      return console.log({
+        response: response
+      });
+    })["catch"](function (error) {
+      return console.log({
+        error: error
+      });
+    });
+    console.log(data);
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -65624,12 +65643,13 @@ var PageAdd = function PageAdd() {
     cols: "30",
     rows: "10",
     ref: register({
-      required: "Le champs est obligatoire."
+      required: "Le champs est obligatoire.",
+      minLength: 10
     }),
     className: "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "text-red-500"
-  }, errors.content && errors.content.message)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit")));
+  }, errors.content && errors.content.message, errors.content && errors.content.type === "minLength" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vous devez ajouter plus de contenu"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit")));
 };
 
 /***/ }),

@@ -1,2 +1,8 @@
-- [ ] Ajouter la route repository
-- [ ] Ajouter une idée
+Ajouter la route repository
+  - [ ] 
+
+Ajouter une idée
+  - [x] Créer les différents champs
+  - [ ] Validations des champs
+  - [ ] Envoie des datas vers l'api
+  - [ ] Mettre une alerte disant que l'idée sera bientôt ajouté

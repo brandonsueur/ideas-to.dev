@@ -1,68 +1,65 @@
-import React, { Component } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
 
-export class PageAdd extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      values: {
-        title: "",
-        content: "",
-        category_id: null,
-      },
+export const PageAdd = () => {
+  const { handleSubmit, register, errors } = useForm();
+  const onSubmit = values => console.log(values);
 
-      errors: {
-        title: '',
-        content: '',
-        category: ''
-      }
-    };
+  return (
+    <div>
+      <form action="#" onSubmit={handleSubmit(onSubmit)}>
+        <div className="block mb-6">
+          <label htmlFor="title">Titre de l'idée</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            className="w-full px-4 py-3 pr-8 font-medium bg-gray-100 rounded-lg outline-none"
+            ref={register({
+              required: "Le champs est obligatoire 😆"
+            })}
+          />
+          <span className="text-red-500">
+            {errors.title && errors.title.message}
+          </span>
+        </div>
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+        <div className="block mb-6">
+          <label htmlFor="categories">Contenu de l'idée</label>
+          <select
+            name="category_id"
+            id="categories"
+            className="font-medium cursor-pointer bg-gray-100 rounded-lg block outline-none appearance-none w-full px-4 py-3 pr-8 hover:border-2 hover:border-gray-200"
+            ref={register({
+              required: "Le champs est obligatoire 😆"
+            })}
+          >
+            <option value="1">Mobile</option>
+            <option value="2">Back-end</option>
+            <option value="3">Package</option>
+            <option value="4">Front-End</option>
+          </select>
+        </div>
 
-  handleSubmit(event) {
-    event.preventDefault();
-  }
+        <div className="block mb-6">
+          <label htmlFor="content">Contenu de l'idée</label>
+          <textarea
+            name="content"
+            id="content"
+            cols="30"
+            rows="10"
+            ref={register({
+              required: "Le champs est obligatoire 😆"
+            })}
+            className="w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
+          />
 
-  render() {
-    return (
-      <div>
-
-        <form action="#" onSubmit={this.handleSubmit}>
-          <div className="block">
-            <label htmlFor="title">Titre de l'idée</label>
-            <input
-              type="text"
-              id="title"
-              name="title"
-              className="w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none"
-              required
-            />
-
-            <label htmlFor="categories">Contenu de l'idée</label>
-            <select
-              name="category_id"
-              id="categories"
-              className="w-full px-4 py-2 mb-6 font-medium bg-gray-100 rounded-lg outline-none"
-            >
-              <option value="1">Mobile</option>
-              <option value="2">Back-end</option>
-              <option value="3">Package</option>
-              <option value="4">Front-End</option>
-            </select>
-
-            <label htmlFor="content">Contenu de l'idée</label>
-            <textarea
-              name="content"
-              id="content"
-              cols="30"
-              rows="10"
-              className="w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
-            />
-          </div>
-          <button>Submit</button>
-        </form>
-      </div>
-    );
-  }
-}
+          <span className="text-red-500">
+            {errors.content && errors.content.message}
+          </span>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+};

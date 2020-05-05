@@ -65567,6 +65567,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/react-hook-form.es.js");
 /* harmony import */ var _utils_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/api */ "./resources/js/utils/api.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -65575,6 +65583,11 @@ var PageAdd = function PageAdd() {
       handleSubmit = _useForm.handleSubmit,
       register = _useForm.register,
       errors = _useForm.errors;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      alert = _useState2[0],
+      setAlert = _useState2[1];
 
   var onSubmit = function onSubmit(values) {
     var title = values.title,
@@ -65586,18 +65599,38 @@ var PageAdd = function PageAdd() {
       category_id: Number(category_id)
     };
     _utils_api__WEBPACK_IMPORTED_MODULE_2__["default"].post("ideas", data).then(function (response) {
-      return console.log({
+      console.log({
         response: response
       });
+      setAlert(true);
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 4000);
     })["catch"](function (error) {
       return console.log({
         error: error
       });
     });
-    console.log(data);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, alert && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "bg-teal-100 border-teal-500 rounded-b text-teal-900 px-4 py-3 mb-6",
+    role: "alert"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "flex"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "py-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "class": "fill-current h-6 w-6 text-teal-500 mr-4",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    "class": "font-bold"
+  }, "G\xE9nial ! Votre id\xE9e \xE0 bien \xE9t\xE9 envoy\xE9."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    "class": "text-sm"
+  }, "La v\xE9rification sera faite dans les plus brefs d\xE9lais. Merci d'avoir particip\xE9 ! \u2764\uFE0F")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: "#",
     onSubmit: handleSubmit(onSubmit)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -65649,7 +65682,9 @@ var PageAdd = function PageAdd() {
     className: "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "text-red-500"
-  }, errors.content && errors.content.message, errors.content && errors.content.type === "minLength" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vous devez ajouter plus de contenu"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit")));
+  }, errors.content && errors.content.message, errors.content && errors.content.type === "minLength" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vous devez ajouter plus de contenu"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "text-white font-medium  bg-green-400 hover:bg-green-500 rounded-lg px-6 py-3 no-underline outline-none"
+  }, "Envoyer l'id\xE9e !")));
 };
 
 /***/ }),

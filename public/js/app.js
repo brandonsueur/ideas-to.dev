@@ -65042,6 +65042,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var wouter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wouter */ "./node_modules/wouter/index.js");
 /* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/index */ "./resources/js/utils/index.js");
+/* harmony import */ var canvas_confetti__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! canvas-confetti */ "./node_modules/canvas-confetti/dist/confetti.module.mjs");
+/* harmony import */ var _utils_api__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/api */ "./resources/js/utils/api.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65052,13 +65054,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -65070,16 +65074,69 @@ var Content =
 function (_React$Component) {
   _inherits(Content, _React$Component);
 
-  function Content() {
+  function Content(props) {
+    var _this;
+
     _classCallCheck(this, Content);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Content).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Content).call(this, props));
+    _this.state = {
+      data: null,
+      countLikes: null,
+      isLoading: false
+    };
+    _this.click = _this.click.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(Content, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState({
+        isLoading: true
+      });
+      var likes_count = this.props.idea.likes_count;
+      this.setState({
+        countLikes: likes_count
+      });
+    }
+  }, {
+    key: "click",
+    value: function click(e) {
+      var _this2 = this;
+
+      e.preventDefault();
+      var id = this.props.idea.id;
+      _utils_api__WEBPACK_IMPORTED_MODULE_5__["default"].post("/likes", {
+        idea_id: id
+      }).then(function (response) {
+        if (response.status === 401) {
+          return _this2.setState({
+            countLikes: response.data.countLikes
+          });
+        } else {
+          Object(canvas_confetti__WEBPACK_IMPORTED_MODULE_4__["default"])({
+            particleCount: 60,
+            spread: 100,
+            origin: {
+              y: 1.2
+            }
+          });
+
+          _this2.setState({
+            countLikes: response.data.countLikes,
+            data: response.data,
+            isLoading: false
+          });
+        }
+      })["catch"](function (error) {
+        return console.log(error.response);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this3 = this;
 
       var idea = this.props.idea;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -65113,15 +65170,15 @@ function (_React$Component) {
         className: "text-xl leading-none"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
         className: "count-like"
-      }, idea.likes_count), " ", "personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.countLikes), " ", "personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex w-1/6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex self-center justify-center w-full text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         onClick: function onClick(e) {
-          return _this.click(e);
+          return _this3.click(e);
         },
-        className: "px-5 py-4 text-2xl bg-white rounded-lg shadow-lg hover:shadow-xl like",
+        className: "px-5 py-4 bg-white rounded-lg text-2xl shadow-lg hover:shadow-xl like",
         href: "#"
       }, "\uD83D\uDC4C")))));
     }

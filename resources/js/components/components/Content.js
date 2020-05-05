@@ -3,8 +3,60 @@ import ReactMarkdown from "react-markdown";
 
 import { Link } from "wouter";
 import { colorCategory, emojiCategory } from "../../utils/index";
+import confetti from "canvas-confetti";
+
+import axios from "../../utils/api";
 
 class Content extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: null,
+      countLikes: null,
+      isLoading: false
+    };
+
+    this.click = this.click.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ isLoading: true });
+
+    const { likes_count } = this.props.idea;
+
+    this.setState({ countLikes: likes_count });
+  }
+
+  click(e) {
+    e.preventDefault();
+
+    const { id } = this.props.idea;
+
+    axios
+      .post("/likes", { idea_id: id })
+      .then(response => {
+        if (response.status === 401) {
+          return this.setState({
+            countLikes: response.data.countLikes
+          });
+        } else {
+          confetti({
+            particleCount: 60,
+            spread: 100,
+            origin: { y: 1.2 }
+          });
+
+          this.setState({
+            countLikes: response.data.countLikes,
+            data: response.data,
+            isLoading: false
+          });
+        }
+      })
+      .catch(error => console.log(error.response));
+  }
+
   render() {
     let { idea } = this.props;
 
@@ -49,7 +101,7 @@ class Content extends React.Component {
           <div className="flex w-5/6">
             <div className="self-center w-5/6">
               <h3 className="text-xl leading-none">
-                <strong className="count-like">{idea.likes_count}</strong>{" "}
+                <strong className="count-like">{this.state.countLikes}</strong>{" "}
                 personnes ont aimé cette idée !
               </h3>
             </div>
@@ -59,7 +111,7 @@ class Content extends React.Component {
             <div className="flex self-center justify-center w-full text-center">
               <a
                 onClick={e => this.click(e)}
-                className="px-5 py-4 text-2xl bg-white rounded-lg shadow-lg hover:shadow-xl like"
+                className="px-5 py-4 bg-white rounded-lg text-2xl shadow-lg hover:shadow-xl like"
                 href="#"
               >
                 👌

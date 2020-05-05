@@ -65591,7 +65591,7 @@ var PageAdd = function PageAdd() {
     name: "title",
     className: "w-full px-4 py-3 pr-8 font-medium bg-gray-100 rounded-lg outline-none",
     ref: register({
-      required: "Le champs est obligatoire 😆"
+      required: "Le champs est obligatoire."
     })
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "text-red-500"
@@ -65604,7 +65604,7 @@ var PageAdd = function PageAdd() {
     id: "categories",
     className: "font-medium cursor-pointer bg-gray-100 rounded-lg block outline-none appearance-none w-full px-4 py-3 pr-8 hover:border-2 hover:border-gray-200",
     ref: register({
-      required: "Le champs est obligatoire 😆"
+      required: "Le champs est obligatoire."
     })
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "1"
@@ -65624,7 +65624,7 @@ var PageAdd = function PageAdd() {
     cols: "30",
     rows: "10",
     ref: register({
-      required: "Le champs est obligatoire 😆"
+      required: "Le champs est obligatoire."
     }),
     className: "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {

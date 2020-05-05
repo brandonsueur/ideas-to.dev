@@ -65999,7 +65999,7 @@ function (_Component) {
         className: "font-semibold text-2xl mb-5"
       }, "\uD83C\uDFA2 Feuille de route"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "w-2/3"
-      }, "Un aper\xE7u des fonctionnalit\xE9s \xE0 venir de ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+      }, "Un aper\xE7u des fonctionnalit\xE9s \xE0 venir de", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         className: "font-semibold"
       }, "idea-to.dev"), ", et celles que nous avons termin\xE9es jusqu'\xE0 pr\xE9sent!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
@@ -66017,13 +66017,13 @@ function (_Component) {
         className: "line-through"
       }, "Cat\xE9goriser les id\xE9es."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Une page pour soutenir le projet."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Possibilit\xE9 d'aimer une id\xE9e."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Possibilit\xE9 d'aimer une id\xE9e.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Ajouter une id\xE9e.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
@@ -66035,9 +66035,9 @@ function (_Component) {
         className: "p-4 border-b text-gray-700"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 Un chat / Discord pour s'entraider sur des id\xE9es.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Possibilit\xE9 d'ajouter une id\xE9e.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Une page pour soutenir le projet.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
@@ -66049,7 +66049,7 @@ function (_Component) {
         className: "p-4 border-b text-gray-700"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Des id\xE9es pour faire passer des entretiens techniques.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Cl\xF4ner des boilerplate d'une id\xE9e faite sur GitHub / Trello. "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Cl\xF4ner des boilerplate d'une id\xE9e faite sur GitHub / Trello.", " "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"

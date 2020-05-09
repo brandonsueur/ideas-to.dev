@@ -6,3 +6,6 @@ Ajouter une idée
   - [x] Validations des champs
   - [x] Envoie des datas vers l'api
   - [x] Mettre une alerte disant que l'idée sera bientôt ajouté
+  - [ ] Fixer le problème d'url API
+  
+- [ ] Importer les idées déjà faites

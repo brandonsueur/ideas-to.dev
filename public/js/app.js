@@ -65224,6 +65224,7 @@ var Header = function Header() {
     className: "hover:text-accent no-underline mr-6"
   }, "\uD83C\uDFA2 Roadmap")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/add",
+    id: "add-idea",
     className: "text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
   }, "\uD83D\uDE80 J'ai une id\xE9e !")))));
 };

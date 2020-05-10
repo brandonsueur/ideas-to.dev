@@ -197,7 +197,7 @@ class Items extends Component {
                         : colorCategory(category.name)
                     } font-medium text-base`}
                   >
-                    {emojiCategory(category.name)} #{category.name}
+                    {emojiCategory(category.name)} {category.name}
                     <span
                       className={`ml-3 text-xs bg-white p-1 ${
                         category.name === categorySelected

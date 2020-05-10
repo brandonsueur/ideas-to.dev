@@ -65577,7 +65577,7 @@ function (_Component2) {
             return _this5.filter(category);
           },
           className: "m-1 py-3 px-3 cursor-pointer rounded-lg d-block ".concat(category.name === categorySelected ? "bg-bluedark text-white" : Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(category.name), " font-medium text-base")
-        }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["emojiCategory"])(category.name), " #", category.name, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["emojiCategory"])(category.name), " ", category.name, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           className: "ml-3 text-xs bg-white p-1 ".concat(category.name === categorySelected ? "bg-purple-100 text-bluedark" : "bg-white", " px-3 rounded-full")
         }, category.ideas_count)));
       })), !loading ? ideas && ideas.length > 0 && ideas.map(function (idea) {

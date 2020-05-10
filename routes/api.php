@@ -3,6 +3,8 @@
 Route::group(['prefix' => 'ideas'], function () {
     Route::get('/', ['uses' => 'Api\IdeasController@index'])
         ->name('api.ideas.index');
+    Route::get('/all', ['uses' => 'Api\IdeasController@all'])
+        ->name('api.ideas.all');
     Route::get('/{id}', ['uses' => 'Api\IdeasController@show'])
         ->name('api.ideas.show');
     Route::get('category/{id}', ['uses' => 'Api\IdeasController@category'])

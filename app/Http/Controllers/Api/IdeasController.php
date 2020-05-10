@@ -21,6 +21,13 @@ class IdeasController extends BaseController
         return IdeaResource::collection($ideas);
     }
 
+    public function all()
+    {
+        $ideas = Idea::all()->where('status', '!=', 1);
+
+        return IdeaResource::collection($ideas);
+    }
+
     public function category($id)
     {
         $ideas = Idea::published()

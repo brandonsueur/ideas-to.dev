@@ -66128,7 +66128,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: "http://localhost:3000/api/v1/",
+  baseURL: window.location.href + "api/v1/",
   // http://ideas-to.dev.test/api/v1/
   responseType: "json"
 }));

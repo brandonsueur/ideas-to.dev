@@ -14,10 +14,10 @@ class CategoriesTableSeeder extends Seeder
     {
         $table = DB::table('categories');
 
-        if($table->get()->count() === 0){
+        if ($table->get()->count() === 0) {
             $table->insert([
                 'icon' => 'mobile.png',
-                'name' => 'appmobile',
+                'name' => 'mobile',
                 'color' => '#F7F5FF',
             ]);
 
@@ -37,6 +37,12 @@ class CategoriesTableSeeder extends Seeder
                 'icon' => 'palette.png',
                 'name' => 'front-end',
                 'color' => '#FAFFF5',
+            ]);
+
+            $table->insert([
+                'icon' => 'fullstack.png',
+                'name' => 'fullstack',
+                'color' => '#F3FEF5',
             ]);
         }
     }

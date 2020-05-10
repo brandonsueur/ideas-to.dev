@@ -65723,7 +65723,9 @@ var PageAdd = function PageAdd() {
     value: "3"
   }, "Package"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "4"
-  }, "Front-End"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Front-End"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    value: "5"
+  }, "Full-Stack"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "block mb-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "content"
@@ -66147,44 +66149,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emojiCategory", function() { return emojiCategory; });
 var colorCategory = function colorCategory(category) {
   switch (category) {
-    case 'fullstack':
-      return 'bg-green-100';
+    case "fullstack":
+      return "bg-green-100";
 
-    case 'front-end':
-      return 'bg-purple-100';
+    case "front-end":
+      return "bg-purple-100";
 
-    case 'back-end':
-      return 'bg-blue-100';
+    case "back-end":
+      return "bg-blue-100";
 
-    case 'package':
-      return 'bg-orange-100';
+    case "package":
+      return "bg-orange-100";
 
-    case 'mobile':
-      return 'bg-red-100';
+    case "mobile":
+      return "bg-red-100";
 
     default:
-      return 'bg-gray-100';
+      return "bg-gray-100";
   }
 };
 var emojiCategory = function emojiCategory(category) {
   switch (category) {
-    case 'fullstack':
-      return '😎';
+    case "fullstack":
+      return "😎";
 
-    case 'front-end':
-      return '🎨';
+    case "front-end":
+      return "🎨";
 
-    case 'back-end':
-      return '⚙️';
+    case "back-end":
+      return "⚙️";
 
-    case 'package':
-      return '📦';
+    case "package":
+      return "📦";
 
-    case 'mobile':
-      return '📱';
+    case "mobile":
+      return "📱";
 
     default:
-      return '🤷🏻‍♂️';
+      return "🤷🏻‍♂️";
   }
 };
 

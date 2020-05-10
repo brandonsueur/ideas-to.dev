@@ -83,6 +83,7 @@ export const PageAdd = () => {
             <option value="2">Back-end</option>
             <option value="3">Package</option>
             <option value="4">Front-End</option>
+            <option value="5">Full-Stack</option>
           </select>
         </div>
 

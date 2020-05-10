@@ -78,9 +78,7 @@ a.like:active {
 }
 
 @media only screen and (max-width: 505px) {
-    header nav {
-        #add-idea {
-            display: none;
-        }
+    .add-idea {
+        display: none;
     }
 }

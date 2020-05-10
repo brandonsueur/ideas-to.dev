@@ -26,8 +26,7 @@ const Header = () => (
         <li>
           <a
             href="/add"
-            id="add-idea"
-            className="text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
+            className="add-idea text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
           >
             🚀 J'ai une idée !
           </a>

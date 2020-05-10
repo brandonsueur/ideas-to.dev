@@ -180,7 +180,7 @@ class Items extends Component {
           ""
         )}
 
-        <ul className="flex list-reset | mt-16 mb-16">
+        <ul className="flex list-reset | mt-16 mb-16 categories">
           {categories &&
             categories.length > 0 &&
             categories.map(category => {
@@ -197,7 +197,12 @@ class Items extends Component {
                         : colorCategory(category.name)
                     } font-medium text-base`}
                   >
-                    {emojiCategory(category.name)} {category.name}
+                    <span className={`d-inline`}>
+                      {emojiCategory(category.name)}
+                    </span>
+
+                    {category.name}
+
                     <span
                       className={`ml-3 text-xs bg-white p-1 ${
                         category.name === categorySelected

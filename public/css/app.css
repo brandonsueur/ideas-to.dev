@@ -54405,19 +54405,19 @@ html {
 }
 
 .bg-primary {
-  background: #FFF5F7;
+  background: #fff5f7;
 }
 
 .bg-red {
-  background: #FFF5F7;
+  background: #fff5f7;
 }
 
 .bg-green {
-  background: #FAFFF5;
+  background: #fafff5;
 }
 
 .bg-blue {
-  background: #F5FFFE;
+  background: #f5fffe;
 }
 
 .bg-bluedark {
@@ -54425,11 +54425,11 @@ html {
 }
 
 .bg-pink {
-  background: #F5FFFE;
+  background: #f5fffe;
 }
 
 .bg-purple {
-  background: #F5FFFE;
+  background: #f5fffe;
 }
 
 .bg-cta {
@@ -54446,7 +54446,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0B1255;
+  color: #0b1255;
 }
 
 a.button {
@@ -54465,5 +54465,11 @@ a.like:active {
 
 .content ul {
   list-style: inside;
+}
+
+@media only screen and (max-width: 770px) {
+  .categories span {
+    display: none;
+  }
 }
 

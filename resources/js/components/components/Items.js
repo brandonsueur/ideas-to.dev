@@ -197,7 +197,7 @@ class Items extends Component {
                         : colorCategory(category.name)
                     } font-medium text-base`}
                   >
-                    <span className={`d-inline`}>
+                    <span className={`d-inline mr-2`}>
                       {emojiCategory(category.name)}
                     </span>
 

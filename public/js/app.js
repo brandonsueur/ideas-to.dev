@@ -65019,8 +65019,8 @@ var Banner = function Banner() {
     className: "py-8 mb-5"
   }, "Nombreuses personnes ne savent pas quoi faire comme projet pour apprendre, d\xE9buter ou encore montrer leurs comp\xE9tences."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "button px-8 py-4 rounded-lg text-white font-medium hover:shadow-lg",
-    href: ""
-  }, "\uD83D\uDD0E En savoir plus")));
+    href: "/ideas"
+  }, "\uD83D\uDCA1 Voir les id\xE9es")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Banner);

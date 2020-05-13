@@ -54467,6 +54467,17 @@ a.like:active {
   list-style: inside;
 }
 
+.content p {
+  margin-bottom: 1em;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 770px) {
   .categories span {
     display: none;

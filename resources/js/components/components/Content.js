@@ -17,6 +17,7 @@ class Content extends React.Component {
       isLoading: false
     };
 
+    console.log({ props });
     this.click = this.click.bind(this);
   }
 
@@ -60,6 +61,7 @@ class Content extends React.Component {
   render() {
     let { idea } = this.props;
 
+    console.log(idea.content);
     return (
       <div data-id={idea.id}>
         {/* header */}

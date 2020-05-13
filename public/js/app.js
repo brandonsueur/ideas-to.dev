@@ -65085,6 +65085,9 @@ function (_React$Component) {
       countLikes: null,
       isLoading: false
     };
+    console.log({
+      props: props
+    });
     _this.click = _this.click.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -65139,6 +65142,7 @@ function (_React$Component) {
       var _this3 = this;
 
       var idea = this.props.idea;
+      console.log(idea.content);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "data-id": idea.id
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

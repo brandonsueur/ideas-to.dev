@@ -180,18 +180,22 @@ class Items extends Component {
           ""
         )}
 
-        <ul className="flex list-reset | mt-16 mb-16 categories">
+        <ul className="list-reset | mt-16 mb-16">
           {categories &&
             categories.length > 0 &&
             categories.map(category => {
               return (
                 <li
                   key={category.id}
-                  className={category.ideas_count > 0 ? "d-block" : "hidden"}
+                  className={
+                    category.ideas_count > 0
+                      ? "d-inline inline-block"
+                      : "hidden"
+                  }
                 >
                   <a
                     onClick={e => this.filter(category)}
-                    className={`m-1 py-3 px-3 cursor-pointer rounded-lg d-block ${
+                    className={`block m-1 py-3 px-3 cursor-pointer rounded-lg ${
                       category.name === categorySelected
                         ? "bg-bluedark text-white"
                         : colorCategory(category.name)
@@ -201,7 +205,7 @@ class Items extends Component {
                       {emojiCategory(category.name)}
                     </span>
 
-                    {category.name}
+                    <span className={`d-inline`}>{category.name}</span>
 
                     <span
                       className={`ml-3 text-xs bg-white p-1 ${

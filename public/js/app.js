@@ -65571,19 +65571,21 @@ function (_Component2) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "text-2xl font-bold"
       }, "Liste des id\xE9es non exhaustifs"), !loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " id\xE9es trouv\xE9es") : "", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "flex list-reset | mt-16 mb-16 categories"
+        className: "list-reset | mt-16 mb-16"
       }, categories && categories.length > 0 && categories.map(function (category) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
           key: category.id,
-          className: category.ideas_count > 0 ? "d-block" : "hidden"
+          className: category.ideas_count > 0 ? "d-inline inline-block" : "hidden"
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
           onClick: function onClick(e) {
             return _this5.filter(category);
           },
-          className: "m-1 py-3 px-3 cursor-pointer rounded-lg d-block ".concat(category.name === categorySelected ? "bg-bluedark text-white" : Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(category.name), " font-medium text-base")
+          className: "block m-1 py-3 px-3 cursor-pointer rounded-lg ".concat(category.name === categorySelected ? "bg-bluedark text-white" : Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["colorCategory"])(category.name), " font-medium text-base")
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           className: "d-inline mr-2"
-        }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["emojiCategory"])(category.name)), category.name, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_4__["emojiCategory"])(category.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "d-inline"
+        }, category.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           className: "ml-3 text-xs bg-white p-1 ".concat(category.name === categorySelected ? "bg-purple-100 text-bluedark" : "bg-white", " px-3 rounded-full")
         }, category.ideas_count)));
       })), !loading ? ideas && ideas.length > 0 && ideas.map(function (idea) {

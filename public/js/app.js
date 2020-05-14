@@ -64983,7 +64983,8 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDCBBR\xE9alis\xE9 par", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "font-semibold",
         href: "https://brandonsueur.fr",
-        target: "_blank"
+        target: "_blank",
+        rel: "noopener"
       }, "Brandon Sueur")))));
     }
   }]);

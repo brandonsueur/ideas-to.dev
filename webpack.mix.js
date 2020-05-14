@@ -1,5 +1,5 @@
-const mix = require('laravel-mix');
-
+const mix = require("laravel-mix");
+require("laravel-mix-purgecss");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix
+  .react("resources/js/app.js", "public/js")
+  .sass("resources/sass/app.scss", "public/css")
+  .purgeCss({
+    enabled: mix.inProduction(),
+    folders: ["src", "templates"],
+    extensions: ["html", "js", "php", "vue"]
+  });

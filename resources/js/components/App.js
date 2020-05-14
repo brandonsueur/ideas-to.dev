@@ -39,6 +39,7 @@ class App extends Component {
                 className="font-semibold"
                 href="https://brandonsueur.fr"
                 target="_blank"
+                rel="noopener"
               >
                 Brandon Sueur
               </a>

@@ -1,26 +1,26 @@
 # ideas-to.dev
 
-Une façon simple de trouver des idées pour développer. Énormément de débutants cherches des idées pour progresser ou encore des développeurs qui souhaites montrer leurs compétences sur GitHub.
+A simple way to find ideas to develop. A lot of beginners looking for ideas to progress or developers who want to show their skills on GitHub.
 
-C'est pour cela que j'ai créé [ideas-to.dev](https://ideas-to.dev) ! 🚀❤️
+This is why I created [ideas-to.dev] (https://ideas-to.dev)! 🚀❤️
 
-## Sommaire
+## Summary
 
-- ⚡️  Rapide et légé (inutile de le dire car ça doit l'être mais c'est quand même important de le dire, c'est VENDEUR).
-- 🔒 Je ne vend pas vos données.
-- 🚀 Une petite api fait avec Laravel 6.
-- 💰 Totalement gratuit (pas longtemps car j'ai envie de vendre des formations pour `comment devenir millionnaire en 2 jours` 😆).
+- ⚡️ Fast and light (no need to say it because it has to be but it's still important to say it, it's SELLER).
+- 🔒 I am not selling your data.
+- 🚀 A small API made with Laravel 6.
+- 💰 Completely free 
 
-## 🤝 Pour contribuer, c'est très simple !
+## 🤝 To contribute, it's very simple!
 
-Faite marcher votre inspiration et ajouter vos idées pour aider les autres à faire des projets afin de progresser. 👌
+Take your inspiration and add your ideas to help others make plans to progress. 👌
 
-1. Proposer une issue, en éprimant simplement votre idée et vous aurez l'honneur d'apparaitre sous l'idée. 
-2. Je dois faire la validation depuis une petite administration.
-3. Elle sera visible dans les plus brefs délais sur le site.
+1. Propose an PR, by simply expressing your idea and you will have the honor of appearing under the idea.
+2. I have to validate from a small administration.
+3. It will be visible as soon as possible on the site.
 
-## Pour me contacter
-C'est simple et gratuit !
+## To contact me
+It's simple and free ! 😎
 
-- [Mon Twitter @_brandonsueur](https://twitter.com/_brandonsueur)
-- [Mon site internet](https://brandonsueur.fr)
+- [My Twitter @_brandonsueur] (https://twitter.com/_brandonsueur)
+- [My website] (https://brandonsueur.fr)

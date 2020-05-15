@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Auth
+ */
+Route::post('login', 'Api\UsersController@login');
+Route::post('register', 'Api\UsersController@register');
+
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::post('details', 'Api\UsersController@details');
+});
+
+/**
+ * Ideas
+ */
 Route::group(['prefix' => 'ideas'], function () {
     Route::get('/', ['uses' => 'Api\IdeasController@index'])
         ->name('api.ideas.index');
@@ -13,6 +26,9 @@ Route::group(['prefix' => 'ideas'], function () {
         ->name('api.ideas.store');
 });
 
+/**
+ * Categories
+ */
 Route::group(['prefix' => 'categories'], function () {
     Route::get('/', ['uses' => 'Api\CategoriesController@index'])
         ->name('api.categories.index');
@@ -20,6 +36,9 @@ Route::group(['prefix' => 'categories'], function () {
         ->name('api.categories.show');
 });
 
+/**
+ * Repositories
+ */
 Route::group(['prefix' => 'repositories'], function () {
     Route::get('/', ['uses' => 'Api\RepositoriesController@index'])
         ->name('api.repositories.index');
@@ -29,6 +48,9 @@ Route::group(['prefix' => 'repositories'], function () {
         ->name('api.repositories.store');
 });
 
+/**
+ * Likes
+ */
 Route::group(['prefix' => 'likes'], function () {
     Route::get('/', ['uses' => 'Api\LikesController@index'])
         ->name('api.likes.index');
@@ -36,7 +58,7 @@ Route::group(['prefix' => 'likes'], function () {
         ->name('api.likes.store');
 });
 
-Route::middleware(
-    ['auth']
-)->group(function () {
-});
+// Route::middleware(
+//     ['auth']
+// )->group(function () {
+// });

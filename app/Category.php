@@ -10,6 +10,6 @@ class Category extends Model
 
     public function ideas()
     {
-        return $this->belongsTo(Idea::class, 'id', 'category_id');
+        return $this->belongsTo(Idea::class, 'id', 'category_id')->where('status', 1);
     }
 }

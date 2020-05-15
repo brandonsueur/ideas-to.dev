@@ -49,19 +49,19 @@ export default class Item extends Component {
           return this.setState({
             countLikes: response.data.countLikes
           });
-        } else {
-          confetti({
-            particleCount: 60,
-            spread: 100,
-            origin: { y: 1.2 }
-          });
-
-          this.setState({
-            countLikes: response.data.countLikes,
-            data: response.data,
-            isLoading: false
-          });
         }
+
+        confetti({
+          particleCount: 60,
+          spread: 100,
+          origin: { y: 1.2 }
+        });
+
+        this.setState({
+          countLikes: response.data.countLikes,
+          data: response.data,
+          isLoading: false
+        });
       })
       .catch(error => console.log(error.response));
   }

@@ -65143,7 +65143,6 @@ function (_React$Component) {
       var _this3 = this;
 
       var idea = this.props.idea;
-      console.log(idea.content);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "data-id": idea.id
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -65370,21 +65369,21 @@ function (_Component) {
           return _this2.setState({
             countLikes: response.data.countLikes
           });
-        } else {
-          Object(canvas_confetti__WEBPACK_IMPORTED_MODULE_5__["default"])({
-            particleCount: 60,
-            spread: 100,
-            origin: {
-              y: 1.2
-            }
-          });
-
-          _this2.setState({
-            countLikes: response.data.countLikes,
-            data: response.data,
-            isLoading: false
-          });
         }
+
+        Object(canvas_confetti__WEBPACK_IMPORTED_MODULE_5__["default"])({
+          particleCount: 60,
+          spread: 100,
+          origin: {
+            y: 1.2
+          }
+        });
+
+        _this2.setState({
+          countLikes: response.data.countLikes,
+          data: response.data,
+          isLoading: false
+        });
       })["catch"](function (error) {
         return console.log(error.response);
       });

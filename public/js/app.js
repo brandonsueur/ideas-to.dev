@@ -65151,7 +65151,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         href: "/"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0F Retour"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "py-6 px-6 rounded-lg ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name), " mb-10")
+        className: "py-6 px-6 rounded-lg ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name))
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mb-5 -mt-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -65159,13 +65159,11 @@ function (_React$Component) {
       }, Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["emojiCategory"])(idea.category.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "text-2xl font-semibold"
       }, idea.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mt-12 mb-12"
+        className: "mt-12 mb-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_1___default.a, {
         className: "content",
         source: idea.content
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
-        className: "font-light"
-      }, "\uD83D\uDD51 mardi 29 d\xE9cembre 2020 \u30FB \uD83E\uDDD4\uD83C\uDFFB Par ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Brandon Sueur"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex container pl-6 h-32 rounded-lg my-8  ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name), " ")
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex w-5/6"
@@ -65456,8 +65454,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/api */ "./resources/js/utils/api.js");
-/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Item */ "./resources/js/components/components/Item.js");
+/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item */ "./resources/js/components/components/Item.js");
+/* harmony import */ var _utils_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/api */ "./resources/js/utils/api.js");
 /* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/index */ "./resources/js/utils/index.js");
 
 
@@ -65528,7 +65526,7 @@ function (_Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _utils_api__WEBPACK_IMPORTED_MODULE_2__["default"].get("/categories");
+                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get("/categories");
 
               case 2:
                 res = _context.sent;
@@ -65569,7 +65567,7 @@ function (_Component) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return _utils_api__WEBPACK_IMPORTED_MODULE_2__["default"].get("/ideas");
+                return _utils_api__WEBPACK_IMPORTED_MODULE_3__["default"].get("/ideas");
 
               case 2:
                 res = _context2.sent;
@@ -65640,7 +65638,7 @@ function (_Component) {
           className: "ml-3 text-xs bg-white p-1 ".concat(category.name === categorySelected ? "bg-purple-100 text-bluedark" : "bg-white", " px-3 rounded-full")
         }, category.ideas_count)));
       })), !loading && ideas && ideas.length > 0 && ideas.map(function (idea) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_2__["default"], {
           idea: idea,
           key: idea.id,
           visible: idea.category.name === categorySelected || categorySelected == null

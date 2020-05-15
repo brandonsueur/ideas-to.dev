@@ -75,7 +75,7 @@ class Content extends React.Component {
         <div
           className={`py-6 px-6 rounded-lg ${colorCategory(
             idea.category.name
-          )} mb-10`}
+          )}`}
         >
           <div className="mb-5 -mt-12">
             <span className="mr-5 text-3xl">
@@ -85,13 +85,9 @@ class Content extends React.Component {
 
           <h1 className="text-2xl font-semibold">{idea.title}</h1>
 
-          <div className="mt-12 mb-12">
+          <div className="mt-12 mb-5">
             <ReactMarkdown className="content" source={idea.content} />
           </div>
-
-          <time className="font-light">
-            🕑 mardi 29 décembre 2020 ・ 🧔🏻 Par <b>Brandon Sueur</b>
-          </time>
         </div>
 
         {/* like */}

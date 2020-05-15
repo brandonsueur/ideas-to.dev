@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import Item from "./Item";
 
 import axios from "../../utils/api";
-import Item from "./Item";
 
 import { colorCategory, emojiCategory } from "../../utils/index";
 

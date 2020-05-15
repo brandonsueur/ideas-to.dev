@@ -2,7 +2,7 @@
 
 A simple way to find ideas to develop. A lot of beginners looking for ideas to progress or developers who want to show their skills on GitHub.
 
-This is why I created [ideas-to.dev] (https://ideas-to.dev)! 🚀❤️
+This is why I created [ideas-to.dev](https://ideas-to.dev)! 🚀❤️
 
 ## Summary
 

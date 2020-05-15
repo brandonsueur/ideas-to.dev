@@ -21,9 +21,9 @@ class IdeasController extends BaseController
         return IdeaResource::collection($ideas);
     }
 
-    public function all()
+    public function notPublished()
     {
-        $ideas = Idea::standby()->with('category')->get();
+        $ideas = Idea::notPublished()->with('category')->get();
 
         return IdeaResource::collection($ideas);
     }

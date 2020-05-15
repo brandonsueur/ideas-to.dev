@@ -6,6 +6,13 @@ Ajouter une idée
   - [x] Validations des champs
   - [x] Envoie des datas vers l'api
   - [x] Mettre une alerte disant que l'idée sera bientôt ajouté
-  - [ ] Fixer le problème d'url API
-  
-- [ ] Importer les idées déjà faites
+  - [x] Fixer le problème d'url API
+
+- [ ] Importer les idées déjà faites (GitHub)
+
+
+Création du Dashboard
+  - [ ] Se connecter
+  - [ ] Récupérer les idées
+  - [ ] Pouvoir modifier les idées
+  - [ ] Valider une idée

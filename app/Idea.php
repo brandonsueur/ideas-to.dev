@@ -26,6 +26,11 @@ class Idea extends Model
         return $query->where('status', 1);
     }
 
+    public function scopeStandby($query)
+    {
+        return $query->where('status', 0);
+    }
+
     public function repositories()
     {
     }

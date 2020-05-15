@@ -23,7 +23,7 @@ class IdeasController extends BaseController
 
     public function all()
     {
-        $ideas = Idea::all()->where('status', '!=', 1);
+        $ideas = Idea::standby()->with('category')->get();
 
         return IdeaResource::collection($ideas);
     }

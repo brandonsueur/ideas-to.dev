@@ -22,5 +22,5 @@ Take your inspiration and add your ideas to help others make plans to progress. 
 ## To contact me
 It's simple and free ! 😎
 
-- [My Twitter @_brandonsueur] (https://twitter.com/_brandonsueur)
-- [My website] (https://brandonsueur.fr)
+- [My Twitter @_brandonsueur](https://twitter.com/_brandonsueur)
+- [My website](https://brandonsueur.fr)

@@ -34,7 +34,7 @@ class App extends Component {
 
           <footer className="text-center my-8">
             <p>
-              👨🏻‍💻Réalisé par{" "}
+              👨🏻‍💻Created by{" "}
               <a
                 className="font-semibold"
                 href="https://brandonsueur.fr"

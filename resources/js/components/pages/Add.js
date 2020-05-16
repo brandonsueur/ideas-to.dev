@@ -54,14 +54,14 @@ export const PageAdd = () => {
 
       <form action="#" onSubmit={handleSubmit(onSubmit)}>
         <div className="block mb-6">
-          <label htmlFor="title">Titre de l'idée</label>
+          <label htmlFor="title">Title of idea</label>
           <input
             type="text"
             id="title"
             name="title"
             className="w-full px-4 py-3 pr-8 font-medium bg-gray-100 rounded-lg outline-none"
             ref={register({
-              required: "Le champs est obligatoire."
+              required: "The field required."
             })}
           />
           <span className="text-red-500">
@@ -70,13 +70,13 @@ export const PageAdd = () => {
         </div>
 
         <div className="block mb-6">
-          <label htmlFor="categories">Contenu de l'idée</label>
+          <label htmlFor="categories">Category</label>
           <select
             name="category_id"
             id="categories"
             className="font-medium cursor-pointer bg-gray-100 rounded-lg block outline-none appearance-none w-full px-4 py-3 pr-8 hover:border-2 hover:border-gray-200"
             ref={register({
-              required: "Le champs est obligatoire."
+              required: "The field required."
             })}
           >
             <option value="1">Mobile</option>
@@ -88,14 +88,14 @@ export const PageAdd = () => {
         </div>
 
         <div className="block mb-6">
-          <label htmlFor="content">Contenu de l'idée</label>
+          <label htmlFor="content">Content</label>
           <textarea
             name="content"
             id="content"
             cols="30"
             rows="10"
             ref={register({
-              required: "Le champs est obligatoire.",
+              required: "The field required.",
               minLength: 10
             })}
             className="w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
@@ -104,12 +104,12 @@ export const PageAdd = () => {
           <span className="text-red-500">
             {errors.content && errors.content.message}
             {errors.content && errors.content.type === "minLength" && (
-              <span>Vous devez ajouter plus de contenu</span>
+              <span>You need to add more content.</span>
             )}
           </span>
         </div>
         <button className="text-white font-medium  bg-green-400 hover:bg-green-500 rounded-lg px-6 py-3 no-underline outline-none">
-          Envoyer l'idée !
+          Send the idea !
         </button>
       </form>
     </div>

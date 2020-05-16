@@ -64980,7 +64980,7 @@ function (_Component) {
         component: _pages_index__WEBPACK_IMPORTED_MODULE_3__["PageError"]
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
         className: "text-center my-8"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDCBBR\xE9alis\xE9 par", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDCBBCreated by", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "font-semibold",
         href: "https://brandonsueur.fr",
         target: "_blank",
@@ -65016,12 +65016,12 @@ var Banner = function Banner() {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "font-bold text-3xl"
-  }, "Des id\xE9es de projets \xE0 concevoir pour", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "apprendre le d\xE9veloppement ! \uD83C\uDF89"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Project ideas for learn ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "development! \uD83C\uDF89"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "py-8 mb-5"
-  }, "Nombreuses personnes ne savent pas quoi faire comme projet pour apprendre, d\xE9buter ou encore montrer leurs comp\xE9tences."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "button px-8 py-4 rounded-lg text-white font-medium hover:shadow-lg",
+  }, "Many people do not know what to do as a project to learn, start or show their skills."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "button px-4 py-3 rounded-lg text-white font-medium hover:shadow-lg",
     href: "/ideas"
-  }, "\uD83D\uDCA1 Voir les id\xE9es")));
+  }, "\uD83D\uDCA1All ideas")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Banner);
@@ -65149,7 +65149,7 @@ function (_React$Component) {
         className: "flex items-center justify-between mt-24 mb-10"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         href: "/"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0F Retour"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0F Back"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "py-6 px-6 rounded-lg ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name))
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mb-5 -mt-12"
@@ -65172,7 +65172,7 @@ function (_React$Component) {
         className: "text-xl leading-none"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
         className: "count-like"
-      }, this.state.countLikes), " ", "personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.countLikes), " ", "people liked this idea!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex w-1/6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex self-center justify-center w-full text-center"
@@ -65221,13 +65221,13 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/ideas",
     className: "mr-6 hover:text-accent no-underline"
-  }, "\uD83D\uDCA1 Id\xE9es")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "\uD83D\uDCA1Ideas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/roadmap",
     className: "hover:text-accent no-underline mr-6"
   }, "\uD83C\uDFA2 Roadmap")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/add",
     className: "add-idea text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
-  }, "\uD83D\uDE80 J'ai une id\xE9e !")))));
+  }, "\uD83D\uDE80 I have an idea !")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -65418,7 +65418,7 @@ function (_Component) {
         className: "leading-none"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
         className: "count-like"
-      }, !this.state.isLoading ? countLikes : idea.likes_count), " ", "personnes ont aim\xE9 cette id\xE9e !"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, !this.state.isLoading ? countLikes : idea.likes_count), " ", "people liked this idea!"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "w-1/6 flex"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "justify-center text-center flex self-center w-full"
@@ -65618,7 +65618,7 @@ function (_Component) {
           categorySelected = _this$state.categorySelected;
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "text-2xl font-bold"
-      }, "Liste des id\xE9es non exhaustifs"), !loading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " id\xE9es trouv\xE9es"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+      }, "List of non-exhaustive ideas"), !loading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, countIdeas == null ? ideas.length : countIdeas, " ideas found"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         className: "list-reset | mt-16 mb-16"
       }, categories && categories.length > 0 && categories.map(function (category) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
@@ -65748,13 +65748,13 @@ var PageAdd = function PageAdd() {
     className: "block mb-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "title"
-  }, "Titre de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, "Title of idea"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     id: "title",
     name: "title",
     className: "w-full px-4 py-3 pr-8 font-medium bg-gray-100 rounded-lg outline-none",
     ref: register({
-      required: "Le champs est obligatoire."
+      required: "The field required."
     })
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "text-red-500"
@@ -65762,12 +65762,12 @@ var PageAdd = function PageAdd() {
     className: "block mb-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "categories"
-  }, "Contenu de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, "Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     name: "category_id",
     id: "categories",
     className: "font-medium cursor-pointer bg-gray-100 rounded-lg block outline-none appearance-none w-full px-4 py-3 pr-8 hover:border-2 hover:border-gray-200",
     ref: register({
-      required: "Le champs est obligatoire."
+      required: "The field required."
     })
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "1"
@@ -65783,21 +65783,21 @@ var PageAdd = function PageAdd() {
     className: "block mb-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "content"
-  }, "Contenu de l'id\xE9e"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+  }, "Content"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     name: "content",
     id: "content",
     cols: "30",
     rows: "10",
     ref: register({
-      required: "Le champs est obligatoire.",
+      required: "The field required.",
       minLength: 10
     }),
     className: "w-full px-4 py-2 font-medium bg-gray-100 rounded-lg outline-none"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "text-red-500"
-  }, errors.content && errors.content.message, errors.content && errors.content.type === "minLength" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vous devez ajouter plus de contenu"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, errors.content && errors.content.message, errors.content && errors.content.type === "minLength" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "You need to add more content."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "text-white font-medium  bg-green-400 hover:bg-green-500 rounded-lg px-6 py-3 no-underline outline-none"
-  }, "Envoyer l'id\xE9e !")));
+  }, "Send the idea !")));
 };
 
 /***/ }),
@@ -65824,10 +65824,10 @@ var PageError = function PageError() {
     className: "font-black text-4xl"
   }, "Oops ! \uD83E\uDD7A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "py-3"
-  }, "Tu es actuellement sur une page qui n'h\xE9site pas ou plus."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "You are currently on a page that does not hesitate or more."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/",
     className: "text-green-400"
-  }, "Retourner \xE0 l'accueil"));
+  }, "Return to home"));
 };
 
 /***/ }),

@@ -96,7 +96,7 @@ export default class Item extends Component {
               <strong className="count-like">
                 {!this.state.isLoading ? countLikes : idea.likes_count}
               </strong>{" "}
-              personnes ont aimé cette idée !
+              people liked this idea!
             </p>
           </div>
         </div>

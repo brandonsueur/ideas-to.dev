@@ -66,7 +66,7 @@ class Content extends React.Component {
         {/* header */}
         <div className="flex items-center justify-between mt-24 mb-10">
           <Link href="/">
-            <a>🚶🏻‍♂️ Retour</a>
+            <a>🚶🏻‍♂️ Back</a>
           </Link>
         </div>
 
@@ -99,7 +99,7 @@ class Content extends React.Component {
             <div className="self-center w-5/6">
               <h3 className="text-xl leading-none">
                 <strong className="count-like">{this.state.countLikes}</strong>{" "}
-                personnes ont aimé cette idée !
+                people liked this idea!
               </h3>
             </div>
           </div>

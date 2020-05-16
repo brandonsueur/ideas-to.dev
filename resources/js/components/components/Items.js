@@ -60,10 +60,10 @@ class Items extends Component {
 
     return (
       <div>
-        <h2 className="text-2xl font-bold">Liste des idées non exhaustifs</h2>
+        <h2 className="text-2xl font-bold">List of non-exhaustive ideas</h2>
 
         {!loading && (
-          <p>{countIdeas == null ? ideas.length : countIdeas} idées trouvées</p>
+          <p>{countIdeas == null ? ideas.length : countIdeas} ideas found</p>
         )}
 
         <ul className="list-reset | mt-16 mb-16">

@@ -13,7 +13,7 @@ const Header = () => (
       <ul className="list-reset | text-sm font-medium | flex">
         <li>
           <Link to="/ideas" className="mr-6 hover:text-accent no-underline">
-            💡 Idées
+            💡Ideas
           </Link>
         </li>
 
@@ -28,7 +28,7 @@ const Header = () => (
             href="/add"
             className="add-idea text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
           >
-            🚀 J'ai une idée !
+            🚀 I have an idea !
           </a>
         </li>
       </ul>

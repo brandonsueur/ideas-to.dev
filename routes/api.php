@@ -58,6 +58,13 @@ Route::group(['prefix' => 'likes'], function () {
         ->name('api.likes.store');
 });
 
+/**
+ * Newsletter
+ */
+Route::get(['prefix' => 'newsletter'], function(){
+    Route::post('/', ['uses' => 'Api\NewsletterController@store'])->name('api.likes.store');
+});
+
 // Route::middleware(
 //     ['auth']
 // )->group(function () {

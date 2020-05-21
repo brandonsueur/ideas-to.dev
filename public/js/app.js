@@ -65110,9 +65110,8 @@ function (_React$Component) {
       var _this2 = this;
 
       e.preventDefault();
-      var id = this.props.idea.id;
       _utils_api__WEBPACK_IMPORTED_MODULE_5__["default"].post("/likes", {
-        idea_id: id
+        idea_id: this.props.idea.id
       }).then(function (response) {
         if (response.status === 401) {
           return _this2.setState({
@@ -65149,7 +65148,7 @@ function (_React$Component) {
         className: "flex items-center justify-between mt-24 mb-10"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         href: "/"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0F Back"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0FBack"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "py-6 px-6 rounded-lg ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name))
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mb-5 -mt-12"

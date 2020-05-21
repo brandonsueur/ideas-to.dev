@@ -12,10 +12,10 @@ class BaseController extends Controller
         $input = $request->all();
 
         $validator = Validator::make($input, [
-            'address_ip' => 'required',
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required',
+            'address_ip' => 'required',
         ]);
 
         if($validator->fails()) $validator->errors();
@@ -27,9 +27,9 @@ class BaseController extends Controller
 
         if(!$ifExist){
             $data = [
-                'email' => isset($input['email']) ? $input['email'] : null,
                 'fist_name' => $input['fist_name'] || '',
                 'last_name' => $input['last_name'] || '',
+                'email' => isset($input['email']) ? $input['email'] : null,
                 'address_ip' => $request->ip(),
             ];
 

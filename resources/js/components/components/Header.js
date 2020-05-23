@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "wouter";
+import { Link, Redirect } from "wouter";
 
 const Header = () => (
   <header className="flex justify-between items-center my-12">
@@ -21,6 +21,22 @@ const Header = () => (
           <Link to="/roadmap" className="hover:text-accent no-underline mr-6">
             🎢 Roadmap
           </Link>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/ideas-to-dev/ideas-to.dev"
+            style={{ marginRight: "20px" }}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+              alt="GitHub"
+              style={{ display: "inline-block", marginRight: "7px" }}
+              width="15"
+            />
+            GitHub
+          </a>
         </li>
 
         <li>

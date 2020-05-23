@@ -65224,6 +65224,20 @@ var Header = function Header() {
     to: "/roadmap",
     className: "hover:text-accent no-underline mr-6"
   }, "\uD83C\uDFA2 Roadmap")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://github.com/ideas-to-dev/ideas-to.dev",
+    style: {
+      marginRight: "20px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+    alt: "GitHub",
+    style: {
+      display: "inline-block",
+      marginRight: "7px"
+    },
+    width: "15"
+  }), "GitHub")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/add",
     className: "add-idea text-white rounded-lg px-4 py-3 no-underline bg-cta hover:shadow-lg"
   }, "\uD83D\uDE80 I have an idea !")))));

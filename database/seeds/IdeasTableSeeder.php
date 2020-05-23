@@ -17,20 +17,19 @@ class IdeasTableSeeder extends Seeder
             $table->insert([
                 'user_id' => 1,
                 'category_id' => 4,
-                'title' => 'Une association caritative',
-                'slug' => 'une-association-caritative',
-                'content' => "Plus d'une association, recherche des profils techniques pour refaire leurs sites ou applications mobiles pour très peu de moyen. Cependant, cela permet de progresser et afficher des projets sur sont portfolio.
+                'title' => 'Charitable organisation',
+                'slug' => 'charitable-organisation',
+                'content_fr' => "More than one association, looking for technical profiles to redo their sites or mobile applications for very little means. However, this allows you to progress and display projects on your portfolio.
 
-Des associations, il y en a beaucoup et s'en doute une qui vous tiendrais à coeur d'aider à refaire leurs site,
-aider à avoir un vrai impacte grâce à internet.
+Associations, there are many and you can imagine one that would keep you in the heart receiving to redo their site, help make a real impact through the Internet.
 
-Aujourd'hui c'est simple de faire savoir des choses sur internet, cependant il faut un message simple, un site et
-une application moderne, peu de redirection, modals et un message clair.
+Today it's simple to make things known on the internet, however you need a simple message, a website and
+a modern app, few redirects, modals and a clear message.
 
-Donc vous l'avez compris souvent l'association à le message mais pas les compétences ou l'équipe pour refaire sont
-site web, l'application mobile ou même les flyers, bannières des réseaux sociaux...Etc
+So you often understood the association with the message but not the skills or the team to redo are
+website, mobile application or even flyers, social media banners ... etc.
 
-### 🔗 Quelques liens
+### 🔗 Some links
 - https://solidarites.info/liste-ong-humanitaires.php
 - https://dribbble.com/search/association",
                 'status' => 1,
@@ -41,14 +40,14 @@ site web, l'application mobile ou même les flyers, bannières des réseaux soci
             $table->insert([
                 'user_id' => 1,
                 'category_id' => 2,
-                'title' => 'Comparaisons et statistiques du gasoil',
-                'slug' => 'comparaisons-et-statistiques-du-gasoil',
-                'content' => "Avez-vous cherchez à prendre le gasoil autour de chez vous ? J'en suis sur que oui ! Et pourquoi pas faire votre petite interface pour récupérer le gasoil le moins chère en calculant les kilomètres à partir de chez-vous..etc ?
+                'title' => 'Gasoil comparisons and statistics',
+                'slug' => 'gasoil-comparisons-and-statistics',
+                'content' => "Are you looking to take diesel around your home? I'm sure it does! And why not make your little interface to recover the cheapest diesel fuel by calculating the kilometers from your home ... etc?
 
-Nous pouvons économiser jusqu'à 500€ suivant votre utilisation par an de Gasoil. Alors, faite un
-outil pour vos proches ou afin apprendre à récupérer des données d'un site avec une jolie interface.
+We can save up to € 500 depending on your use of Diesel fuel per year. So make a
+tool for your loved ones or to learn how to recover data from a site with a nice interface.
 
-### 🔗 Liens utiles
+### 🔗 Some links
 - https://dribbble.com/search/comparator
 - https://www.prix-carburants.gouv.fr/
 - https://mon-essence.fr/",
@@ -62,12 +61,12 @@ outil pour vos proches ou afin apprendre à récupérer des données d'un site a
                 'category_id' => 4,
                 'title' => 'Mario Bros',
                 'slug' => 'mario-bros',
-                'content' => "Qui a déjà joué à Super Mario Bross ou encore à Mario Kart ? Je pense tout le monde ! 🤪 Avez-vous déjà de le refaire entièrement en JS puis Flat Design, avec d'autres modes de jeux ? Pas besoin de faire des choses ultras compliqués mais qui vous permettrez d'apprendre énormément de chose, sur les déplacements, les performances...etc
+                'content' => "Who has ever played Super Mario Bross or Mario Kart? I think everyone! 🤪 Do you already have to redo it entirely in JS then Flat Design, with other game modes? No need to do very complicated things but which will allow you to learn a lot of things, on travel, performance ... etc
+                
+Today our browsers are capable of doing enormous things, the developers know better and better optimize
+things and therefore why not online games, multiplayer (it already exists but why not yours?).
 
-Aujourd'hui nos navigateurs sont capable de faire d'énormes choses, les développeurs savent de mieux en mieux optimisez
-les choses et donc pourquoi pas des jeux online, multijoueurs(ça existe déjà mais pourquoi pas le votre ?).
-
-### 🔗 Liens utiles
+### 🔗 Some links
 
 - https://codepen.io/search/pens?q=mario+bross
 - https://dribbble.com/search/game
@@ -80,16 +79,16 @@ les choses et donc pourquoi pas des jeux online, multijoueurs(ça existe déjà 
             $table->insert([
                 'user_id' => 0,
                 'category_id' => 1,
-                'title' => 'ChuiBourré',
-                'slug' => 'chuibourre',
-                'content' => "Une façon simple d'alerté que vous êtes bourré gr âce à une application mobile. Ne laissons pas nos proches aux bords de la route. Donc, cherchons une solution numérique pour éviter cela et qu'un proche vienne le récupérer.
+                'title' => 'am bourré',
+                'slug' => 'am-drunk',
+                'content' => "A simple way to be alerted that you're drunk thanks to a mobile app. Do not leave our loved ones at the side of the road. So let's look for a digital solution to avoid this and have someone close to you pick it up.
 
-L'idée serait que si la personne qui est bourré, appuis sur un bouton sur l'application, ça alerte ses proches.
-Si, il ne fait pas cette manipulation, les personnes proches, peuvent lancer un appelle sur l'application, si
-il y a aucune réponse au bout de 20 minutes, donc récupérer sa dernière position, les 5 dernières photos et pourquoi pas
-les derniers appels passés.
+The idea would be that if the person who is drunk, press a button on the application, it alerts his loved ones.
+If, he does not do this manipulation, the close people, can launch a call on the application, if
+there is no response after 20 minutes, so retrieve its last position, the last 5 photos and why not
+the last calls made.
 
-### 🔗 Liens utiles
+### 🔗 Some links
 - https://dribbble.com/search/alert%20mobile
 - https://dribbble.com/search/mobile",
                 'status' => 1,
@@ -102,9 +101,37 @@ les derniers appels passés.
                 'category_id' => 5,
                 'title' => 'My Youtube Like',
                 'slug' => 'my-youtube-like',
-                'content' => "Un système permettant aux utilisateurs de lister les youtubers qu'ils suivent en les classant dans des catégories pour offrir un système de 'curation'. Cela crée ensuite une page partageable.
+                'content' => "A system allowing users to list the youtubers they follow by classifying them in categories to offer a 'curation' system. This then creates a shareable page.
 
-### 🔗 Liens utiles
+### 🔗 Some links
+
+- https://fr.wikipedia.org/wiki/Curation_de_contenu
+- https://dribbble.com/search/youtube
+- https://www.ideagency.fr/blog/outils-curation-contenu",
+                'status' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+
+            $table->insert([
+                'user_id' => 0,
+                'category_id' => 5,
+                'title' => 'Streaming service for amateur football',
+                'slug' => 'streaming-service-for-amateur-football',
+                'content' => "Platform allowing all amateur clubs to stream their Sunday football matches (amateur level). This platform would therefore allow everyone to be able to follow the matches of their small childhood club every weekend.
+
+Advertising could be added during half-time and a banner at certain times of the match to finance the platform AND the club.
+
+The main features:
+
+- Rate a player (s)
+- Comment on the match
+- Support your team (clap-clap, sound effects, etc ...)
+- Sale of a kit for the club including:
+    - The tripod for mobile or more professional camera
+    - The possibility of streaming the matches during a whole season
+
+### 🔗 Some links
 
 - https://fr.wikipedia.org/wiki/Curation_de_contenu
 - https://dribbble.com/search/youtube

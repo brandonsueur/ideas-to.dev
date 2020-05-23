@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import Repository from "./Repository";
 
 const Repositories = () => (
-    <div>
-        <Repository />
-        <Repository />
-        <Repository />
-        <Repository />
-        <Repository />
-        <Repository />
-    </div>
-)
+  <div>
+    <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
+  </div>
+);
 
-export default Repositories
+export default Repositories;

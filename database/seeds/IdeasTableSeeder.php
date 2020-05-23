@@ -19,7 +19,7 @@ class IdeasTableSeeder extends Seeder
                 'category_id' => 4,
                 'title' => 'Charitable organisation',
                 'slug' => 'charitable-organisation',
-                'content_fr' => "More than one association, looking for technical profiles to redo their sites or mobile applications for very little means. However, this allows you to progress and display projects on your portfolio.
+                'content' => "More than one association, looking for technical profiles to redo their sites or mobile applications for very little means. However, this allows you to progress and display projects on your portfolio.
 
 Associations, there are many and you can imagine one that would keep you in the heart receiving to redo their site, help make a real impact through the Internet.
 
@@ -189,12 +189,12 @@ I am sure that you use an application on a daily basis and that redoing it by yo
                 'category_id' => 5,
                 'title' => '3D modeling of your house',
                 'slug' => '3D-modeling-of-your-house',
-                'content' => `Apart from your old photos, you can also remember your old house or your current house in 3D thanks to digital.
+                'content' => "Apart from your old photos, you can also remember your old house or your current house in 3D thanks to digital.
 Using modern web technologies or languages, you can do great things!
 
 ### Some links
 - https://threejs.org/
-- https://codepen.io/search/pens?q=threejs`,
+- https://codepen.io/search/pens?q=threejs",
                 'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),

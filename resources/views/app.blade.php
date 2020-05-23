@@ -9,9 +9,15 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>ideas-to.dev</title>
 
-    <meta name="description" content="Des idées de projets à concevoir pour apprendre le développement !">
+    <meta name="description" content="Project ideas to design to learn development!">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('favicon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('favicon-512x512.png') }}">
+
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
     <script defer src="{{ asset('js/app.js') }}"></script>

@@ -6,38 +6,42 @@ use App\Http\Controllers\Controller as Controller;
 use App\Newsletter;
 use Illuminate\Http\Request;
 
+use Validator;
+
 class BaseController extends Controller
 {
-    public function newsletter(Request $request){
+    public function newsletter(Request $request)
+    {
         $input = $request->all();
 
         $validator = Validator::make($input, [
-            'first_name' => 'required',
-            'last_name' => 'required',
             'email' => 'required',
-            'address_ip' => 'required',
         ]);
 
-        if($validator->fails()) $validator->errors();
+        $request->request->add([
+            'address_ip' => request()->ip(),
+        ]);
+
+        if ($validator->fails()) return $validator->errors();
 
         $ifExist = Newsletter::all()
             ->where('email', '=', $input['email'])
             ->where('address_ip', '=', $request->ip())
             ->count();
 
-        if(!$ifExist){
+        if (!$ifExist) {
             $data = [
-                'fist_name' => $input['fist_name'] || '',
-                'last_name' => $input['last_name'] || '',
-                'email' => isset($input['email']) ? $input['email'] : null,
+                'first_name' => $request->get('first_name'),
+                'last_name' => $request->get('last_name'),
+                'email' => $request->get('email'),
                 'address_ip' => $request->ip(),
             ];
 
             Newsletter::create($data);
 
-            return response()->json(['already_registered' => false, 'data' => $data], 201);
+            return response()->json(['data' => $data], 201);
         } else {
-            return response()->json(['already_registered' => true], 401);
+            return response()->json(['message' => 'Already registered'], 401);
         }
     }
 }

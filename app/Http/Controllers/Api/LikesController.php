@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Category;
 use App\Http\Controllers\Api\BaseController as BaseController;
 
-use Carbon\Carbon;
-use foo\Foo;
 use Illuminate\Http\Request;
 
 
@@ -25,14 +22,14 @@ class LikesController extends BaseController
             'idea_id' => 'required'
         ]);
 
-        if($validator->fails()) $validator->errors();
+        if ($validator->fails()) $validator->errors();
 
         $ifExist = Like::all()
             ->where('idea_id', '=', $input['idea_id'])
             ->where('address_ip', '=', $request->ip())
             ->count();
 
-        if($ifExist == 0){
+        if ($ifExist == 0) {
             $data = [
                 'user_id' => isset($input['user_id']) ? $input['user_id'] : null,
                 'idea_id' => $input['idea_id'],
@@ -45,7 +42,7 @@ class LikesController extends BaseController
                 ->where('idea_id', '=', $input['idea_id'])
                 ->count();
 
-            return response()->json(['countLikes' => $countLikes, 'data' =>  $data],201);
+            return response()->json(['countLikes' => $countLikes, 'data' =>  $data], 201);
         } else {
             $countLikes = Like::all()
                 ->where('idea_id', '=', $input['idea_id'])

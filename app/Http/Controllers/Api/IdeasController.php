@@ -11,7 +11,6 @@ use Illuminate\Support\Str;
 
 use Validator;
 
-
 class IdeasController extends BaseController
 {
     public function index()

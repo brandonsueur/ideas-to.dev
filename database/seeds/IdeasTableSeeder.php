@@ -171,14 +171,13 @@ Fees for setting up and digitizing the menu: 100.00 + commission of € 0.10 / o
                 'category_id' => 5,
                 'title' => 'Known Application Clone',
                 'slug' => 'known-application-clone',
-                'content' => `The best way to progress is above all to “copy” before innovating.
+                'content' => "The best way to progress is above all to “copy” before innovating.
 
-What I mean by that is that recreating, "cloning" and personalizing an application that already exists is very educational. No need to redo all the features, but the most important and most importantly, it's time to add your own features that you always "dreamed" of adding to the original platform.
+What I mean by that is that recreating, \"cloning\" and personalizing an application that already exists is very educational. No need to redo all the features, but the most important and most importantly, it's time to add your own features that you always \"dreamed\" of adding to the original platform.
 
 Whatever the application, it can be: Discord, Twitter, Youtube, Google Drive etc.
 
-I am sure that you use an application on a daily basis and that redoing it by yourself will be an additional project to put on the portfolio.
-`,
+I am sure that you use an application on a daily basis and that redoing it by yourself will be an additional project to put on the portfolio.",
                 'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),

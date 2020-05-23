@@ -32,10 +32,8 @@ class Content extends React.Component {
   click(e) {
     e.preventDefault();
 
-    const { id } = this.props.idea;
-
     axios
-      .post("/likes", { idea_id: id })
+      .post("/likes", { idea_id: this.props.idea.id })
       .then(response => {
         if (response.status === 401) {
           return this.setState({
@@ -66,7 +64,7 @@ class Content extends React.Component {
         {/* header */}
         <div className="flex items-center justify-between mt-24 mb-10">
           <Link href="/">
-            <a>🚶🏻‍♂️ Back</a>
+            <a>🚶🏻‍♂️Back</a>
           </Link>
         </div>
 

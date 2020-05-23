@@ -65110,9 +65110,8 @@ function (_React$Component) {
       var _this2 = this;
 
       e.preventDefault();
-      var id = this.props.idea.id;
       _utils_api__WEBPACK_IMPORTED_MODULE_5__["default"].post("/likes", {
-        idea_id: id
+        idea_id: this.props.idea.id
       }).then(function (response) {
         if (response.status === 401) {
           return _this2.setState({
@@ -65149,7 +65148,7 @@ function (_React$Component) {
         className: "flex items-center justify-between mt-24 mb-10"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(wouter__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         href: "/"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0F Back"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD83D\uDEB6\uD83C\uDFFB\u200D\u2642\uFE0FBack"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "py-6 px-6 rounded-lg ".concat(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["colorCategory"])(idea.category.name))
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mb-5 -mt-12"
@@ -66053,75 +66052,71 @@ function (_Component) {
         className: "container mt-24"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "font-semibold text-2xl mb-5"
-      }, "\uD83C\uDFA2 Feuille de route"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "\uD83C\uDFA2 Roadmap"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "w-2/3"
-      }, "Un aper\xE7u des fonctionnalit\xE9s \xE0 venir de", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+      }, "An overview of the upcoming features of", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         className: "font-semibold"
-      }, "idea-to.dev"), ", et celles que nous avons termin\xE9es jusqu'\xE0 pr\xE9sent!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "idea-to.dev"), ", and those we have completed so far!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "text-lg font-semibold"
-      }, "\uD83D\uDCA1 Version initiale")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "\uD83D\uDCA1 Initial version")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Affichage des id\xE9es."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Posting ideas."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Cat\xE9goriser les id\xE9es."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Categorize ideas."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Possibilit\xE9 d'aimer une id\xE9e."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Possibility to like an idea."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\u2705 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "line-through"
-      }, "Ajouter une id\xE9e.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Add an idea.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "text-lg font-semibold"
-      }, "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDD2C Les fonctionnalit\xE9s \xE0 venir")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDD2C Upcoming features")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 Pr\xE9senter ses projets GitHub en dessous d'une id\xE9e.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 Present your GitHub projects below an idea.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 Un chat / Discord pour s'entraider sur des id\xE9es.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 A chat / Discord to help each other with ideas.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700 opacity-50"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "line-through"
-      }, "Une page pour soutenir le projet.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83D\uDD04 A page to support the project."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "text-lg font-semibold"
-      }, "\uD83D\uDC54 Fonctionnalit\xE9s premium")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "\uD83D\uDC54 Features premium")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Recevez chaque Vendredi matin sur votre profil des nouvelles id\xE9es.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Receive every Friday morning on your news profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Des id\xE9es pour faire passer des entretiens techniques.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Ideas for conducting technical interviews")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Cl\xF4ner des boilerplate d'une id\xE9e faite sur GitHub / Trello.", " "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Clone boilerplate from an idea made on GitHub / Trello."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-lg mt-12 rounded"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "border-b-2 p-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "text-lg font-semibold"
-      }, "\uD83E\uDD14 En r\xE9fl\xE9xion")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "\uD83E\uDD14 In reflection")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Espace de commentaire.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Comment space.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Statistiques sur courbe d'apprentissage d'une id\xE9e.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Statistics on an idea learning curve.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Cr\xE9er un profil avec des scores.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Create a profile with scores.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA D\xE9fier des personnes \xE0 cr\xE9er des id\xE9es.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "p-4 border-b text-gray-700"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Cr\xE9er un profil avec des scores."))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uD83E\uDDEA Challenge people to create ideas."))));
     }
   }]);
 

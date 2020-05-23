@@ -4,7 +4,7 @@ export class PageRoadmap extends Component {
   render() {
     return (
       <div className="container mt-24">
-        <h1 className="font-semibold text-2xl mb-5">🎢 Feuille de route</h1>
+        <h1 className="font-semibold text-2xl mb-5">🎢 Roadmap</h1>
         <p className="w-2/3">
           An overview of the upcoming features of{" "}
           <b className="font-semibold">idea-to.dev</b>, and those we have

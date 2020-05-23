@@ -124,7 +124,7 @@ Advertising could be added during half-time and a banner at certain times of the
 
 The main features:
 
-- Rate a player (s)
+- Rate a player(s)
 - Comment on the match
 - Support your team (clap-clap, sound effects, etc ...)
 - Sale of a kit for the club including:
@@ -133,9 +133,68 @@ The main features:
 
 ### 🔗 Some links
 
-- https://fr.wikipedia.org/wiki/Curation_de_contenu
+- https://dribbble.com/search/streaming
+- https://dribbble.com/search/football",
+                'status' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+
+            $table->insert([
+                'user_id' => 0,
+                'category_id' => 1,
+                'title' => 'Mobile reservation terminal for Kebabs',
+                'slug' => 'mobile-reservation-terminal-for-kebabs',
+                'content' => "McDo terminal white label application for Kebab type restaurants that receive orders by phone.
+
+Instead of people calling, they can download the “<RESTAURANT NAME> by kebab.app” app to order their kebab (s). The application could even be used by someone who is there, instead of someone coming to take the order, he sits down and places his order quietly.
+
+**What would the application look like?**
+
+A very refined application, a bit like the limits of McDonald's: you compose your Kebab: you add the type of meat, raw vegetables, sauces, drink, etc.
+
+**Cost(s) for the restaurateur**
+Fees for setting up and digitizing the menu: 100.00 + commission of € 0.10 / order
+
+### 🔗 Some links
+
+- https://dribbble.com/search/mcdo
 - https://dribbble.com/search/youtube
 - https://www.ideagency.fr/blog/outils-curation-contenu",
+                'status' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+
+            $table->insert([
+                'user_id' => 0,
+                'category_id' => 5,
+                'title' => 'Known Application Clone',
+                'slug' => 'known-application-clone',
+                'content' => `The best way to progress is above all to “copy” before innovating.
+
+What I mean by that is that recreating, "cloning" and personalizing an application that already exists is very educational. No need to redo all the features, but the most important and most importantly, it's time to add your own features that you always "dreamed" of adding to the original platform.
+
+Whatever the application, it can be: Discord, Twitter, Youtube, Google Drive etc.
+
+I am sure that you use an application on a daily basis and that redoing it by yourself will be an additional project to put on the portfolio.
+`,
+                'status' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+
+            $table->insert([
+                'user_id' => 0,
+                'category_id' => 5,
+                'title' => '3D modeling of your house',
+                'slug' => '3D-modeling-of-your-house',
+                'content' => `Apart from your old photos, you can also remember your old house or your current house in 3D thanks to digital.
+Using modern web technologies or languages, you can do great things!
+
+### Some links
+- https://threejs.org/
+- https://codepen.io/search/pens?q=threejs`,
                 'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),

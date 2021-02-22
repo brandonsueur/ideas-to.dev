@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       <Head>
-        <title>Create Next App</title>
+        <title>ideas-to.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

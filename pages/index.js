@@ -1,4 +1,4 @@
-import { Banner, Filters, Item as ItemLine } from "../components";
+import { Banner, Filters, Item as ItemLine, Title } from "../components";
 
 const Home = () => {
   return (
@@ -6,7 +6,9 @@ const Home = () => {
       <Banner />
 
       <div>
-        <h2 className="font-bold text-2xl mt-28">Liste des idées</h2>
+        <Title type="h3" className="mt-28">
+          Liste des idées
+        </Title>
 
         <Filters />
 

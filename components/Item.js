@@ -28,9 +28,9 @@ const Item = ({ title, category, likes }) => (
         </div>
       </div>
 
-      <h1 className="font-semibold text-lg cursor-pointer self-center">
+      <h2 className="font-semibold text-lg cursor-pointer self-center">
         {title}
-      </h1>
+      </h2>
     </div>
 
     <div className="self-center">

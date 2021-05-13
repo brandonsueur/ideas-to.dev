@@ -1,97 +1,120 @@
+import { Title } from "../components";
+
 const RoadMap = () => (
   <div>
-    <h1 className="font-semibold text-2xl mb-5">🎢 Roadmap</h1>
-    <p className="w-2/3">
-      An overview of the upcoming features of{" "}
-      <b className="font-semibold">idea-to.dev</b>, and those we have completed
-      so far!
+    <Title className="mb-5">Feuille de routes</Title>
+
+    <p className="text-md text-gray-500 w-2/3">
+      Un aperçu des fonctionnalités à venir de{" "}
+      <b className="font-semibold">idea-to.dev</b>, et de celles que nous avons
+      complétées jusqu'à présent !
     </p>
 
-    <div className="shadow-lg mt-12 rounded">
-      <header className="border-b-2 p-4">
-        <h3 className="text-lg font-semibold">💡 Initial version</h3>
+    <div className="shadow-md mt-12 rounded">
+      <header className="border-b-2 border-indigo-50 p-4">
+        <Title type="h5">
+          <span className="mr-1">💡</span> Version initial
+        </Title>
       </header>
 
-      <div className="p-4 border-b text-gray-700 opacity-50">
-        <h3>
-          ✅ <span className="line-through">Posting ideas.</span>
-        </h3>
+      <div className="p-4 border-b text-gray-500 opacity-70">
+        <span className="mr-2">✅</span>
+        <span className="line-through">Poster des idées.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700 opacity-50">
-        <h3>
-          ✅ <span className="line-through">Categorize ideas.</span>
-        </h3>
+      <div className="p-4 border-b text-gray-500 opacity-70">
+        <span className="mr-2">✅</span>
+        <span className="line-through">Catégoriser les idées.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700 opacity-50">
-        <h3>
-          ✅ <span className="line-through">Possibility to like an idea.</span>
-        </h3>
+      <div className="p-4 border-b text-gray-500 opacity-70">
+        <span className="mr-2">✅</span>
+        <span className="line-through">Possibilité d'aimer une idée.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700 opacity-50">
-        <h3>
-          ✅ <span className="line-through">Add an idea.</span>
-        </h3>
+      <div className="p-4 text-gray-500 opacity-70">
+        <span className="mr-2">✅</span>
+        <span className="line-through">Ajouter une idée.</span>
       </div>
     </div>
 
-    <div className="shadow-lg mt-12 rounded">
-      <header className="border-b-2 p-4">
-        <h3 className="text-lg font-semibold">👨🏻‍🔬 Upcoming features</h3>
+    <div className="shadow-md mt-12 rounded">
+      <header className="border-b-2 border-indigo-50 p-4">
+        <Title type="h5">
+          <span className="mr-1">👨🏻‍🔬</span> Fonctionnalités à venir
+        </Title>
       </header>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🔄 Present your GitHub projects below an idea.</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🔄</span>
+        <span className="">
+          Présentez vos projets GitHub ci-dessous une idée.
+        </span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🔄 A chat / Discord to help each other with ideas.</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🔄</span>
+        <span className="">
+          Un chat / Discord pour s'entraider avec des idées.
+        </span>
       </div>
 
-      <div className="p-4 border-b text-gray-700 opacity-50">
-        <h3>🔄 A page to support the project.</h3>
+      <div className="p-4 border-b text-gray-500 opacity-50">
+        <span className="mr-2">🔄</span>
+        <span className="">Une page pour soutenir le projet.</span>
       </div>
     </div>
 
-    <div className="shadow-lg mt-12 rounded">
-      <header className="border-b-2 p-4">
-        <h3 className="text-lg font-semibold">👔 Features premium</h3>
+    <div className="shadow-md mt-12 rounded">
+      <header className="border-b-2 border-indigo-50 p-4">
+        <Title type="h5">
+          <span className="mr-1">👔</span> Fonctionnalités payantes
+        </Title>
       </header>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Receive every Friday morning on your news profile</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Poster des idées.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Ideas for conducting technical interviews</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Des idées originales pour des entretiens techniques.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Clone boilerplate from an idea made on GitHub / Trello.</h3>
+      <div className="p-4 text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>
+          Clônez des boilerplate à partir de l'organisation GitHub & Trello.
+        </span>
       </div>
     </div>
 
-    <div className="shadow-lg mt-12 rounded">
-      <header className="border-b-2 p-4">
-        <h3 className="text-lg font-semibold">🤔 In reflection</h3>
+    <div className="shadow-md mt-12 rounded">
+      <header className="border-b-2 border-indigo-50 p-4">
+        <Title type="h5">
+          <span className="mr-1">🤔</span> En réfléxions
+        </Title>
       </header>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Comment space.</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Espace commentaire en dessous d'une idée pour échanger.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Statistics on an idea learning curve.</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Statistiques sur votre courbe d'apprentissage.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Create a profile with scores.</h3>
+      <div className="p-4 border-b text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Créer un profil avec des scores.</span>
       </div>
 
-      <div className="p-4 border-b text-gray-700">
-        <h3>🧪 Challenge people to create ideas.</h3>
+      <div className="p-4  text-gray-500">
+        <span className="mr-2">🧪</span>
+        <span>Défiez vos amis à créer des idées.</span>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 const RoadMap = () => (
-  <main className="container mt-24 mx-auto">
+  <div>
     <h1 className="font-semibold text-2xl mb-5">🎢 Roadmap</h1>
     <p className="w-2/3">
       An overview of the upcoming features of{" "}
@@ -94,7 +94,7 @@ const RoadMap = () => (
         <h3>🧪 Challenge people to create ideas.</h3>
       </div>
     </div>
-  </main>
+  </div>
 );
 
 export default RoadMap;

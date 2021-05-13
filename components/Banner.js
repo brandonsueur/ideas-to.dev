@@ -1,6 +1,6 @@
 const Banner = () => (
   <>
-    <h1 className="mt-32 font-bold text-3xl max-w-xl">
+    <h1 className="font-bold text-3xl max-w-xl">
       Aucune inspiration à avoir. Cherchez une idée et développez-la!
     </h1>
 

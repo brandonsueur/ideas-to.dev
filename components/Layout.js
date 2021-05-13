@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import { Header, Footer } from "./";
+
+import "tailwindcss/tailwind.css";
 
 /**
  * Layout
@@ -13,14 +14,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>ideas-to.dev</title>
+        <title>ideas-to.dev - Cherchez une idée et développez-la!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="container mx-auto">
         <Header />
 
-        <main className="container">{children}</main>
+        <div className="sm:mt-20 lg:mt-28">{children}</div>
 
         <Footer />
       </div>
